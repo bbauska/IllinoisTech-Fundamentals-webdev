@@ -7388,25 +7388,20 @@ here in this corner, the size that changes, so as I get to 600 pixels.
 Notice 600 pixels, it changes. That&apos;s the basic.
 Ultimately though, I want to take this, you&apos;ll notice here,
 for instance, my navigation is centered, but it gets hidden, and I just
-side scroll
-for a larger screen. That&apos;s not going to work. We actually don&apos;t
-want any of that, we want to eventually
-have all of this be mobile friendly. If I pop open, let me go all the
+side scroll for a larger screen. That&apos;s not going to work. We actually don&apos;t
+want any of that, we want to eventually have all of this be mobile friendly. If I pop open, let me go all the
 way back to demos. Here is CSS. This is the CSS for
 the class website. As I scroll all the way down, see here come my media
 queries. Here I have very small screens. I have my font changes in my
-navigation for subtly bigger. There&apos;s a few little
-changes there. But generally then here
+navigation for subtly bigger. There&apos;s a few little changes there. But generally then here
 you&apos;ll see I have a lot of changes that happen after you get above
-really
-tiny screens, so above mobile tablet of 680. You see I have several
+really tiny screens, so above mobile tablet of 680. You see I have several
 media queries all in width. Then this final 930 is I&apos;m setting
-everything
-for a desktop size here. That&apos;s generally how
+everything for a desktop size here. That&apos;s generally how
 we use media screens. Pop open the class website. Here I have my
-navigation centered. As I get smaller, you&apos;ll see that jump there. I
-remove some of this
-padding on the side, which is nice on bigger
+navigation centered. As I get smaller, you&apos;ll see that jump there. 
+
+I remove some of this padding on the side, which is nice on bigger
 screens, keep things centered. Then I make my font and
 everything be a little bit bigger and take up
 80% width of the page. You&apos;ll see everything
@@ -7418,9 +7413,9 @@ centering it. Then this is where,
 for instance, Apple, they have a media query
 that&apos;s listening to change this whole navigation up
 there to the drop down, and obviously many
-more like that, every website does that. Media query, you just
-implement it in there, and you have your
-base code always, you write your CSS for
+more like that, every website does that. 
+
+Media query, you just implement it in there, and you have your base code always, you write your CSS for
 a mobile first screen, which is tough because when
 you&apos;re writing your code, and especially now when you&apos;re learning,
 most of you are testing it out on a desktop, which is fine to begin
@@ -7432,15 +7427,18 @@ you&apos;ve removed some of the content that may not be necessary, and it
 makes your website cleaner and easier for users to use. Responsive
 design, alternative loading. Here, we&apos;re just writing it into our CSS
 page. Some websites where the code is just so freaking big, like
-Facebook or Amazon, they might choose to just have CSS pages. Now,
-usually they don&apos;t do this anymore because they&apos;re going to use a type
+Facebook or Amazon, they might choose to just have CSS pages. 
+
+Now, usually they don&apos;t do this anymore because they&apos;re going to use a type
 of CSS that actually has each of the code implemented differently and
 you can write code in different sheets, and then you have a back-end
 code that puts all together one giant style sheet. But alternatively
 some people might want to load and just keep their mobile version
 different from their desktop version. It&apos;s easier to have your CSS in
 different style sheets and you can look, this is what mobile should look
-like, this is what desktop should look like. You can load them
+like, this is what desktop should look like. 
+
+You can load them
 differently instead of merging them. Now I suggest you use the code and
 we&apos;ll talk more about that merging, which is SASS, S-A-S-S, C-S-S, or
 CSS is the other one. We&apos;ll talk about that where you can keep it as
@@ -7451,7 +7449,9 @@ mobile style or something like that, desktop style. Then you have it as
 it only gets implemented when min-width, so media screen and min-width
 800 pixels. That would only pull it in when it&apos;s 800 pixels, so it
 loads a different style sheet. Now with this, the other style sheet has
-to have all the code, so you want to make sure you do that. Wouldn&apos;t
+to have all the code, so you want to make sure you do that. 
+
+Wouldn&apos;t
 recommend this. Generally, we want to keep it separate. This import url
 file screen min-width, this you put at the top of your CSS and it
 imports it into the CSS screen, and this we use with SASS or CSS, but
@@ -7460,6 +7460,7 @@ lecture at the end of this semester on. Probably should avoid unless you
 understand how import works and may impact performance. This is
 definitely something you&apos;re going to want to play around with once you
 get the SASS level of coding, but that&apos;s not for beginners quite yet.
+
 Generally, we want to be using this media screen and min-width, makes it
 easier to keep it all in one style sheet and understand what&apos;s going
 on. Now you can build responsive websites.
@@ -7492,22 +7493,23 @@ interactivity on your website, you want to go to a
 Javascript plug in. With HTML 5 and CSS 3, we&apos;ve separated the
 semantic structure of your website and
 content from the style, CSS is your style. Now, we also learned earlier
-that Javascript
-is our behavior. Now with that said, there is some legacy
+that Javascript is our behavior. Now with that said, there is some legacy
 behavior hard coded into CSS already
 that&apos;s been there a while and you can still use
 it and it&apos;s back end coded into all these browsers. You just need to
 type in the little CSS code and
 all of a sudden you have some nice elaborate animation transformations,
-or transitions. With transitions,
-it is very simple. We&apos;ve learned last week about transitioning between
+or transitions. 
+
+With transitions, it is very simple. We&apos;ve learned last week about transitioning between
 using media queries transitioning the CSS style from a large screen to
 a smaller screen. As it moves, there&apos;s a
 transition in that style. In this case, let&apos;s
 imagine instead of the pictures we use for
 our demo, it&apos;s colors. On a smaller screen, we
-have a blue background. On a large screen we
-have a red background. Well, as we switch
+have a blue background. 
+
+On a large screen we have a red background. Well, as we switch
 between those two, there&apos;d be a sharp jump. If we add a little
 transition code, we can slow that jump down and have a little bit of
 transition in the color. It&apos;s pretty straightforward and we can
@@ -7521,7 +7523,9 @@ of course we need to make sure there&apos;s
 a beginning state and the end state,
 coded for that. We want to know how long
 the transition should take, transition duration, the way
-the transition accelerates. We&apos;ll talk a little bit more
+the transition accelerates. 
+
+We&apos;ll talk a little bit more
 about that and then pause, or no pause before it starts. We don&apos;t have
 to put this transition delay, but we can if we want, and we can have a little
 delay before it starts. Let&apos;s first look at
@@ -7533,8 +7537,9 @@ the background
 color changes of the box, the shape of the box, the turn of the box, and
 the rotation is
 actual animation. We&apos;ll talk about in the
-next part of this video. But you can see how much we can change. It
-looks really cool. There&apos;s a little code there. Now, here&apos;s a
+next part of this video. But you can see how much we can change. 
+
+It looks really cool. There&apos;s a little code there. Now, here&apos;s a
 little logarithmic. Here is duration speed
 and then over time, it starts slow, speeds up, and then slows down a
 little towards the end. We can code that in actual real time picking
@@ -7573,8 +7578,9 @@ little yellow border there. You&apos;ll see the shadow
 here, if I click on it, turns into a nice
 little button and the transition stops and
 then also it pushes down. It&apos;s moving the box even
-though it&apos;s not pushing down. To do this, we make the
-shadow disappear just subtly, there&apos;s a little
+though it&apos;s not pushing down. 
+
+To do this, we make the shadow disappear just subtly, there&apos;s a little
 shadow on the side, and then we have it moved
 from the top down a little. So it looks like it&apos;s a
 three dimensional push. It&apos;s really simple actually. Let&apos;s check out
@@ -7593,17 +7599,18 @@ this border radius, which many of you
 may have forgotten. In one of the
 lectures, it creates the little soft edges, these curves on the edge.
 Now, here starts my
-transition declaration. There should be one more. Text-shadow. This is
-my declaration. Sorry about that, had my
-comment in the wrong place. Text-shadow, I&apos;m declaring
+transition declaration. There should be one more. Text-shadow. 
+
+This is my declaration. Sorry about that, had my comment in the wrong place. Text-shadow, I&apos;m declaring
 the color of it. I want it dark gray
 and then here I only want 1em.1em.1em and then box-shadow is going to
 be zero top and bottom. What I got going on here. Five pixel, five
 pixel, and then calling out the color, so you&apos;ll see top, bottom, left,
 right, and 0.5. How am I doing top right? Bottom left. Making it
 very complicated there. Here&apos;s where I call
-out the transition, so let&apos;s focus on this. Start transition. I&apos;m
-announcing I&apos;m doing a transition on the
+out the transition, so let&apos;s focus on this. 
+
+Start transition. I&apos;m announcing I&apos;m doing a transition on the
 properties of A. Here is where then I announce the end states of where
 I want to get to. So I need to know these end states and
 then in my transition, I&apos;m calling out
@@ -7615,7 +7622,9 @@ be a transition there, so it&apos;s not part of the
 transition, which you&apos;ll see. It looks like I pressed down, but it
 actually just real quick pressing down on it jumps there, and it
 doesn&apos;t happen as
-part of the transition. The transition is on the hover. Or actually
+part of the transition. 
+
+The transition is on the hover. Or actually
 there&apos;s a box-shadow on the transition as well. A hover or on focus,
 this is for mobile, and then active is when
 I&apos;m pushing down on it. So this, in Java Script,
@@ -7637,31 +7646,37 @@ with the other ones. Going back to my demo here. The next one is a
 rotation. This is we want to rotate, translate, scale,
 or skew the HTML. So that&apos;s our transform. Rotate is very simple. Here
 we have rotating.
+
 Now we can rotate it. This is rotated around
 the center axis, but we&apos;ll talk about
 other rotations. Translate is just moving it. Scale is we were
 shrinking the size of it. Then skew is where we&apos;re taking
 two corners, pulling it, and skew is very rarely used, but I&apos;ll show
-you that one. Transform basics, we have
-the transform MDN here. You&apos;ll see here
-transform, rotate, scale. I declare the transform and
-then I declare how I want it. You also have a matrix up there, but I
+you that one. Transform basics, we have the transform MDN here. You&apos;ll see here
+transform, rotate, scale. 
+
+I declare the transform and then I declare how I want it. You also have a matrix up there, but I
 don&apos;t use that. Scale, rotate skew. You can also go transform; scale
 and translate
 at the same time. Then you&apos;re declaring how you want the properties
 to translate. So you can see here all types of ways in which
 you can translate. You can also translate just
 on X or translate just on Y, rotate just on X, Y. Let&apos;s come back to
-here. Here we have transform, rotates around the center. If we&apos;re just
+here. 
+
+Here we have transform, rotates around the center. If we&apos;re just
 rotating, we just need to say how much we want it to rotate. Transform
 origin we&apos;re then choosing, here is center top, I could say. 100%, 100%
 is going to go from here, 0,0, 100%,400 pixel 0 is going to pull us
 there. There&apos;s all types of ways in which you can contemplate this. You
 can say center, right, so go right here, top from here, bottom from
 there, or you can start to do some of these calculations, which is on
-the MDN to figure out. We&apos;re not going to get too much in that. Here,
+the MDN to figure out. 
+
+We&apos;re not going to get too much in that. Here,
 this is choosing different origins we want to transform it. We can also
 then transform positions. Here we have transform: translateX.
+
 Translating x is 50 pixels. Transform: translate is going to be 25 and
 this is going to be moving the position X 50 pixels inwards and then
 from Y we&apos;re going to be 25 pixels, so it&apos;s moving it up. This is the
@@ -7715,7 +7730,9 @@ covered mostly targeting the HTML grid, but you can go and select
 behaviors. You can select, for instance, someone clicking. Once you get
 the JavaScript specifically, you can use a lot of these CSS selectors to
 target all types of aspects of what&apos;s called the DAB. We&apos;ll cover that
-when we get to JavaScript. But basically it&apos;s beyond just the HTML. You
+when we get to JavaScript. 
+
+But basically it&apos;s beyond just the HTML. You
 can think of everything the user engages with in the Web as something
 that can be turned into an object that can be then selected. So on your
 phone the rotation of the screen is a thing to target, someone clicking
@@ -7726,7 +7743,9 @@ attribute and grab and then put the attribute in there. This can target
 just an attribute. You can target exact attribute value. If they enter a
 certain value into maybe an input area, you can target that value. You
 can try and figure out what that value is. This also the value of say
-like a web link. This was early viruses, they grab the attribute value
+like a web link. 
+
+This was early viruses, they grab the attribute value
 of the href, then whatever href equals, they&apos;d grab that value and
 switch out and put, and my mom still
 clicks on these links, for instance ask.com every
@@ -7740,7 +7759,9 @@ language attribute selector, beginning of the attribute,
 end of the attribute. End of the attribute, for
 instance, I&apos;ll show you, you might be
 interested in whether they&apos;re uploading a
-PDF file, Word file. In many online Cloud storage
+PDF file, Word file. 
+
+In many online Cloud storage
 when you upload a PDF, then it looks at the end attribute says
 sees that it ends in PDF and then puts a little
 PDF logo next to that file, or a Word logo, so
@@ -7760,8 +7781,9 @@ little Star Wars. This is a very simple one here. If I had it like li
 and then nth child of, so nth child eight in an li, says list item 1,
 list item 2. Or actually since
 they&apos;re one, two, three, they might be an ols
-so an ordered list. Then the li is
-going to be there. On the ol, I put this nth child. I&apos;d go to the
+so an ordered list. 
+
+Then the li is going to be there. On the ol, I put this nth child. I&apos;d go to the
 eighth li and it would grab it. I could have the nth child colored a little
 bit differently. Now I might have JavaScript
 that changes this eighth. That maybe if you
@@ -7770,7 +7792,9 @@ click on changes that CSS to a different color than
 based on some JavaScript. Here we have, you can see
 this code li nth child eight span and it has this different background
 color box shadow. You see there&apos;s the box shadow around it with a
-little background color. They all have the hover over. But this is going to be
+little background color. 
+
+They all have the hover over. But this is going to be
 the hover over different, it&apos;s going to be pink,
 whereas these are all blue. That is maybe changing up
 when you click on an item. These lists change
@@ -7782,14 +7806,14 @@ to whatever they click on and then this here
 this CSS style that eight would
 change and so it&apos;d get the background color
 of whatever we click on. It&apos;s a little complicated.
-Nothing we&apos;re going to have to worry about for 361. But I do have a
-little demos and JavaScript how to
-362 doing this. We&apos;re just introducing
-these concepts. Nth child n + 16 is if
-you&apos;re clicking seven. It starts at six and gets
+Nothing we&apos;re going to have to worry about for 361. 
+
+But I do have a little demos and JavaScript how to 362 doing this. We&apos;re just introducing
+these concepts. Nth child n + 16 is if you&apos;re clicking seven. It starts at six and gets
 everything plus there, so n + 6. Very straightforward. -n+9 would start
 at nine and go backwards. Here&apos;s a +n, -n. N is a very common
 algorithmic term for just an unspecified number. Generic child ranges.
+
 Here we start nth child starting n+4 and we actually connect one
 for the negative, so it goes from 4-8 That&apos;s
 writing the code 4-8. We can do here, advanced
@@ -7854,29 +7878,31 @@ add depth to your website.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 For our final lesson on CSS, we&apos;re
 going to have a full site demonstration so you can put all these pieces
-together and see how you can create
-a beautiful website. Some fun things,
-obviously I&apos;m just messing around here. I&apos;m trying to keep the code
+together and see how you can create a beautiful website. Some fun things, obviously I&apos;m just messing around here. I&apos;m trying to keep the code
 really simple. It&apos;s not going to be super clean. So we&apos;re going to
-work more on this sort
-of layout here and responsive design, two different ways to load in
-image logo
-and I&apos;ll talk about why you might want to. So we have here little more
+work more on this sort of layout here and responsive design, two different ways to load in
+image logo and I&apos;ll talk about why you might want to. So we have here little more
 responsive design, show you all this. All right,
-let&apos;s start looking at our HTML. We&apos;re pulling in a Google font. So
-googleapia CSS font family sigmar. So in my CSS you can see I&apos;m pulling
+let&apos;s start looking at our HTML. We&apos;re pulling in a Google font. 
+
+So googleapia CSS font family sigmar. So in my CSS you can see I&apos;m pulling
 in Sigmar here on my company company name, which you&apos;ll see then a cool
 little Ninja company. So I went to Google, we demoed that a few videos ago. And you always know, you just cut and paste. Sana serif cursive this is a proper font stack is you have one you&apos;re pulling in one that the browser
-already knows that looks similar, and then the default cursive, which usually you don&apos;t need that, you just need those two, because this is going to be in most browsers. So then my link out to my resets my link to my style and then I&apos;ve got the body here, little header id main header, wrapping my navigation. And then I&apos;m going to have a
+already knows that looks similar, and then the default cursive, which usually you don&apos;t need that, you just need those two, because this is going to be in most browsers. So then my link out to my resets my link to my style and then I&apos;ve got the body here, little header id main header, wrapping my navigation. 
+
+And then I&apos;m going to have a
 main navbar. So here in my header I have a couple of different things. I have these two images I&apos;m going to go
 next to talk about pull these image, but I also have this additional kind of overhead nav. So this is quite common where you&apos;ll have like the main navigation here in a navbar and then you&apos;ll have
-some extra navigation up there. So for instance, iit.edu go here you have a main nav. You have this weird additional main
+some extra navigation up there. 
+
+So for instance, iit.edu go here you have a main nav. You have this weird additional main
 nav. Well, the COVID stuff is up here, but usually this would be up in
 the top. So you have this main nav down there and then you have this
 other nav. This is more of a too much in a website but it&apos;s pretty
 common to have this sort of nav. So drop the secondary nav and then we
-want to make it smaller, we want to put it off to the side. So we do
-have CSS and then our main nav. So first let&apos;s look at these two image
+want to make it smaller, we want to put it off to the side. 
+
+So we do have CSS and then our main nav. So first let&apos;s look at these two image
 links. So I have my company names separating them. Just so you can see
 the two, I have here, a id logo, href, Ninja Co Home and it links back
 there. So this one you see there&apos;s not pulling any image, it&apos;s just an href to &#35; and then an id. So what
@@ -7886,8 +7912,9 @@ around the image tag. So the image actually starts here. This is the
 image, now putting this a href around it is very common if you go to
 something like Apple. Yeah, company logo up there will bring you back to
 home page. So I&apos;m on watch is company home tag brings you back. This is
-a very common feat, here you might want to put index. So that&apos;s going
-to bring you back to index.html no matter where you are. And then class
+a very common feat, here you might want to put index. 
+
+So that&apos;s going to bring you back to index.html no matter where you are. And then class
 logo. I want to resize this, I&apos;m giving it a class image logo png. So
 I&apos;m just searching my logo. So I&apos;m at full site here going to image
 and then finding my logo right forward slash after the image means look
@@ -7896,6 +7923,7 @@ have that alt attribute and then close out the a to wrap it. So let&apos;s look
 at this one here where we&apos;re pulling it in. So that gives us these two
 images. So I have these two images here. So here I have my main header
 image.logo floating left, giving it a margin left and margin 20 pixels.
+
 So I&apos;ve pulled it all in here and I don&apos;t need to resize it because
 I&apos;ve already pulled in the image in html. And then I&apos;m just using here
 the pulled image and I&apos;m positioning it. So I&apos;m putting the margins 20
@@ -7906,25 +7934,29 @@ id logo-link href. So I created this a, but I haven&apos;t done anything
 with it. So what I need to do is I&apos;m going to turn this a into a box
 that I can drop an image into. And I&apos;m going to use this one background
 image url and CSS here to pull in that image. So I need to give this
-logo it&apos;s an a, so it doesn&apos;t have any width or height. So I&apos;m going
-to give it width 125 pixels. This is not the image I&apos;m giving the box,
+logo it&apos;s an a, so it doesn&apos;t have any width or height. 
+
+So I&apos;m going to give it width 125 pixels. This is not the image I&apos;m giving the box,
 the a box. I&apos;m going to give it height 124 pixels. Where did I get
 these two numbers? I got those two numbers by going to this image, going
 to properties, details, width105 pixels, height 124. So I&apos;m making this
 box exactly the physical size of that image. And then I wanted to
-display as a block, so because a at anchor is an inline text, right. So
-I need to display a as a block. I could put a div around it, but I can
+display as a block, so because a at anchor is an inline text, right. 
+
+So I need to display a as a block. I could put a div around it, but I can
 do that right on the and turn that into block. I&apos;m going to use
 position absolute so I can move it around. Top 20, left 20, how did I
 get there? That was just me messing around. So I&apos;ll put like top ten.
+
 Me having this image I wanted the other image next to it. So I just was
 moving it around, figuring out exactly and roughly by the way I shaped
 it, 2020 was what worked. So then I&apos;m just moving around because I want
 them flush against each other. Remember, I&apos;m inside the CSS file. So
 this is my CSS file, which means I&apos;m inside my CSS folder. So for that
 pathway, I need to go dot dot, which takes me up a folder, the full site
-menu. Then I go to the image folder. Then I find logo png. So I have to
-add this dot dot because I&apos;m navigating from the style folder or the
+menu. Then I go to the image folder. Then I find logo png. 
+
+So I have to add this dot dot because I&apos;m navigating from the style folder or the
 style file. Here I&apos;m navigating from the top file, so I can just go
 into image. Now, this is the tricky part. With alt on the image I have
 right there, the Ninja Logo, no one sees it, but I could do this, delete
@@ -7934,20 +7966,24 @@ assistive reader, I need some text to read it, but I don&apos;t need this
 logo or this text on top of the image. So in the CSS, I indent that text
 -9999 pixels. That takes it way off the screen. But if someone&apos;s
 reading it with an e-reader or an assistive reader, they&apos;ll see that
-text still. They&apos;ll get the text even though it&apos;s 9999 pixels up. So
-that&apos;s complicated. Now let&apos;s talk about why we would want this. Much
+text still. They&apos;ll get the text even though it&apos;s 9999 pixels up. 
+
+So that&apos;s complicated. Now let&apos;s talk about why we would want this. Much
 like with JavaScript, when I want to make things disappear, I have
 certain things that flow through, and I write my HTML to make sure that
 it&apos;s optimized reading for search engines. And then I use JavaScript to
 move things around. So ultimately what I want to do is I might
-want my image to not be rendered and not show up in search results. So I
-pull it in through CSS so it&apos;s not recognized as content, and that&apos;s
+want my image to not be rendered and not show up in search results. 
+
+So I pull it in through CSS so it&apos;s not recognized as content, and that&apos;s
 one possible reason. So doing an image search, I can hide my image in my
 CSS, so it&apos;s pulled in that way so it&apos;s not recognized as a background
 image. And it might be a little harder to search on Google, little
 things like that. There&apos;s all types of search optimization where you
 might want to hide an image and pull it in through Google instead of
-having it in your HTML. But I&apos;m just introducing the concept here
+having it in your HTML. 
+
+But I&apos;m just introducing the concept here
 again, showing that there&apos;s different ways to achieve things, which I
 know as beginner can make it frustrating because you want like here&apos;s
 the question, here&apos;s the answer, here&apos;s how I do this thing. All
@@ -7957,6 +7993,7 @@ wrapping, some as. So that&apos;s a very straightforward navigation. But if
 we go to this second nav list, style none, this all looks the same right
 margins, padding, absolute secondary right floating and left. But here
 is the really cool thing is this little what they&apos;re called the pipe.
+
 So you can see here I have my pipe. Now, I could put it in my HTML. So
 let me just demo that in my HTML. I could drop a little pipe and let&apos;s
 drop it before the myIIT so it shows up. So I dropped the pipe here.
@@ -7976,26 +8013,26 @@ are double, some of them are single. So I&apos;m pulling it in second nav
 li. So second nav li, I go to my second nav, which is second nav id. So
 all these lis are going to get content. And I use quotation marks,
 drop the pipe in and I want it before. So before the lis drop this
-content in,
-it&apos;ll be treated style and I want it color to be black. So that&apos;s
+content in, it&apos;ll be treated style and I want it color to be black. So that&apos;s
 what&apos;s happening there. But let me delete this just so
 you can see what that is, raw. So now on my lis,
 before I get this little pipe, so next then I want to
 remove this pipe there. I just want the pipe between the two. So then I
 add back in second nav li, first
-child before and I remove that content. So content becomes zero instead
+child before and I remove that content. 
+
+So content becomes zero instead
 of pipe. So I&apos;m grabbing the second child and because this then is an
-li with a pseudo
-selector, another pseudo selector, it weighs more than this and
+li with a pseudo selector, another pseudo selector, it weighs more than this and
 it comes after this. So it&apos;s more specific because it&apos;s
 directly the first child instead of every li. So this one then overrides
 that one. And of course, if I go to here,
 refresh, pull up the style inspector. So here you have second
 child nav li before content. This gets crossed out. This gets crossed
 out and we just have this content here
-which is going to give us that. It&apos;s very straightforward. You can see
-that sort of working
-where one overrides the other. Of course, if it didn&apos;t work, I would
+which is going to give us that. It&apos;s very straightforward. 
+
+You can see that sort of working where one overrides the other. Of course, if it didn&apos;t work, I would
 go to my inspector and look here and see why it&apos;s not getting crossed
 out and what&apos;s working. Then on my A&apos;s, I want some color,
 some text decoration underline removing, add a little margins,
@@ -8006,30 +8043,34 @@ gives me when I go under,
 you get the nice little underline there. And you&apos;ll see it&apos;s smaller,
 so I could make it then I could also go on the A where&apos;s my text it might
 make sense to go text, 0.8 text size. There we go. There we go.
+
 So now it&apos;s a little bit smaller. Little side navigation. All right, so
 we&apos;ve created
 a nice little second navigation. Then main navigation we already covered
 in the last video as far as centering it. So we turned it into an inline
-block. We have the hover over and
-now we have our content wrapper. This is where we&apos;re going to
+block. 
+
+We have the hover over and now we have our content wrapper. This is where we&apos;re going to
 get a little bit more specific. On the second navigation, I&apos;m floating
 them left versus floating them right. So it might make sense to float
-them
-all left or to float them all right. And then that would jump them
+them all left or to float them all right. And then that would jump them
 to the side of the page. So, let&apos;s float them right and
 we&apos;ll see why that doesn&apos;t work. So now myIIT, Google, Apple, I flip
 them. You&apos;ll see my T, I can move these pipes,
 but myIIT, Google, Apple. So floating right means
-my HTML is also flipped. So here I have myIIT, Google Apple. Chances
-are, from left to right, writing a website in English. This is also the
+my HTML is also flipped. So here I have myIIT, Google Apple. 
+
+Chances are, from left to right, writing a website in English. This is also the
 order I want them to appear from left to right on the page. So I can&apos;t
 use float right, because that&apos;ll flip them. So I need to float them
 left and then move the entire navigation right. And that&apos;s what I did.
+
 So in the style, I float the lis left so they stack from left to right.
 And then in my nav, I use absolute position and I use top ten pixels and
 then right ten pixels. So I start from the right hand side and move them
 ten pixels inwards. So again, if I do left where they&apos;re naturally
 sitting, You&apos;ll see they&apos;re actually hidden up here behind the image.
+
 So instead of floating them and getting them over here, I&apos;m using
 position to get them over here. So position, right, Inspect elements. So
 now I have the lis, but the ul, this thing got positioned right. So the
@@ -8042,7 +8083,9 @@ those are the little you got the geometry sort of moving stuff around in
 your head to make sure it all works right. Main content is what I want
 to do next. So the next thing I was starting to talk about here is now
 that I got everything floated and moved around, I also want this all to
-line up. So I want the maroon and the blue and blue to keep going. But
+line up. 
+
+So I want the maroon and the blue and blue to keep going. But
 actually I kind of want this when it floats right, not to go over to
 here, but to line up with my content area, which is set at 960. I&apos;m
 recording this on a slightly wide screen. This is about the size of a
@@ -8054,8 +8097,9 @@ size. I don&apos;t shrink it at all. It naturally floats to the full size.
 But header container is where I want container position relative. And
 then I need this container box to be 960. So header main, I put the
 background color on this. That&apos;ll stretch all the way across and then
-inside, immediately inside I&apos;ll put a div that has the container. So
-then all my other stuff stays within that div. In the 960, even though
+inside, immediately inside I&apos;ll put a div that has the container. 
+
+So then all my other stuff stays within that div. In the 960, even though
 the header gets the color all the way across 100% width of the screen.
 The container then keeps all the content within that 960. And you&apos;ll
 see, I use that container again here. So my main NAV bar gets the
@@ -8069,8 +8113,9 @@ content gets the full div. Everything stays inside it. because the main
 content, I actually have a background image for the whole body which is
 behind here. But this is in front of it so you don&apos;t see it. So this
 just I&apos;d need just the container. All right, now we have a main and a
-side. So natural HTML flow, they flow on top of each other. We&apos;re going
-to talk a little bit more about this, the media screen. So app media
+side. So natural HTML flow, they flow on top of each other. 
+
+We&apos;re going to talk a little bit more about this, the media screen. So app media
 screen. So when we&apos;re doing mobile first, we&apos;re designing for our
 mobile screen. We have everything up here. We don&apos;t do a media screen.
 This is going to be designed for a mobile screen. But what&apos;s important
@@ -8083,6 +8128,7 @@ talked a little bit when I introduced media queries about this
 background image. I have here, remember background image I&apos;m pulling in
 through the css both times at&#8230;to go up. As I go here, you&apos;ll see
 right at that size. So nine inspect element, it&apos;s right at 900 pixels.
+
 Right at 800 pixels, 805, that&apos;s where I put it, 800 pixels. And it
 changes. Now as I go bigger, the other thing I want is I want in mobile
 screens, I often want my content to stack. So I have it stacking on top
@@ -8097,7 +8143,9 @@ space so that the font isn&apos;t right up against the edge. Then I have
 when I do my media screen. So any screen over 800 pixels, I change the
 width of the main content just 75%. I don&apos;t have width here because
 it&apos;s already naturally going 100%. But it&apos;s in a container so that
-100% is 960. Then I have it float left. My width here is 20 pixels and
+100% is 960. 
+
+Then I have it float left. My width here is 20 pixels and
 float left. Why is this not 80 pixels? Because I need a little bit of
 room for these paddings, which is going to be five pixels is inside the
 width. And you&apos;ll remember if I wanted to do, I could do width like
@@ -8166,18 +8214,19 @@ car to a drone. It&apos;s a very powerful language, but I want to simplify,
 and make it less intimidating. I want you to understand that the way
 you&apos;re learning here, looking at some pre written JavaScripts, and
 being able to cut and paste it into your website, and know how to then
-change a few lines of code to make
-it work with your website. That&apos;s how most web developers engage with
+change a few lines of code to make it work with your website. 
+
+That&apos;s how most web developers engage with
 JavaScript. Don&apos;t think that you&apos;re not learning something, or you
-have to learn
-this very elaborate code to be able to make a good website. This is how
+have to learn this very elaborate code to be able to make a good website. This is how
 websites are built most places. We&apos;re going to start with the basics of
 JavaScript. Simple syntax, understanding of how it&apos;s written. Again,
 JavaScript is one of the reasons this whole class I&apos;ve been emphasizing
 that you have to write everything in lower case, because in JavaScript
 code it actually matters. Now whether you write things in upper case or
-lower case, it&apos;s not just the file names. It&apos;s how you write it. If
-you create a variable that&apos;s all caps, and then you write in the code,
+lower case, it&apos;s not just the file names. It&apos;s how you write it. 
+
+If you create a variable that&apos;s all caps, and then you write in the code,
 a lower cap version of that, JavaScript won&apos;t find that variable. You
 really do have to stick with the all caps or lower caps. However you&apos;re
 writing the code that matters. Then we&apos;re going to talk about some more
@@ -8185,9 +8234,11 @@ of the features in syntax, get you writing a little JavaScript, and then
 we&apos;re going to go into a Google Maps API. What I&apos;m talking about is
 application programming interface. APIs is short, everyone refers to
 them, most engineers probably won&apos;t even know what that stands for.
+
 You&apos;re going to be able to take this entire software that makes Google
 Maps work. You&apos;re going to be able to put it in your website, put it in
 a nice box, put some frames around it. Use your HTML and CSS to do that.
+
 Then learn how to change just a few lines of the JavaScript to make this
 map your own. Students sometimes will pick their hometown, and they&apos;ll
 put their favorite restaurants on there highlighted, or one of my
@@ -8198,6 +8249,7 @@ finally, we&apos;re going to learn about JavaScript objects, event handling,
 and the general DOM, which is the DOM document object model of
 JavaScript. That&apos;s helping you understand how JavaScript interprets
 your HTML and CSS, how it looks at it when you&apos;re writing that code.
+
 Having that scheme in your head will make it easier to write your
 JavaScript. I encourage you not to get too intimidated with this. It
 really should be plug and play coding that you&apos;re writing here. You
@@ -8226,7 +8278,9 @@ semantic code, CSS is the presentational style code, JavaScript is the
 behavioral. With JavaScript, often throughout my lectures you&apos;ll see is
 JS, it can target all the elements attributes of an HTML page and CSS.
 But beyond that, it targets something called the Document Object Model,
-and we&apos;ll cover that more. But in general, the Document Object Model
+and we&apos;ll cover that more. 
+
+But in general, the Document Object Model
 goes beyond just your code, and it can ask questions about the history,
 where the user has been on the browser, the orientation of the page, the
 operating system, all types of things. JavaScript and can target
@@ -8237,7 +8291,9 @@ them all, so often you&apos;d have a JavaScript test to see if this CSS3 or
 HTML5 feature worked. And if it didn&apos;t, then the JavaScript would turn
 that code off. Now all the browsers are up to date and can handle all
 the CSS three. It can modify HTML and CSS properties so it can show
-hide, change, add events to elements. This is where you get the
+hide, change, add events to elements. 
+
+This is where you get the
 interactivity. AJAX is the very powerful version of JavaScript developed
 by Google. AJAX is how you have things like video games on browsers and
 how you have Gmail. Gmail is to go to example where it looks like
@@ -8248,6 +8304,7 @@ when things get moved to a folder. But in reality the database in the
 backend looks very different than the user interface of Gmail, and
 that&apos;s on purpose, Gmail is made to look like a folder system, whereas
 the library in the back that manages that information is very complex.
+
 Historically, browsers have differed in support, and we&apos;ll talk a
 little bit about that. But mostly now, all browsers are readily capable
 of handling high speed JavaScript processing. JavaScript is not related
@@ -8260,6 +8317,7 @@ now they changed it to JavaScript. The relationship between Java and
 JavaScript is the same relationship between Java and C Sharp, or Ruby or
 any other code. They&apos;re just different types of codes. There&apos;s no
 direct relationship other than they&apos;re just different types of codes.
+
 JavaScript has since overtaken Java as probably the most prominent
 language used today. Some university&apos;s computer engineering programs
 now teach JavaScript as the first code instead of C Sharp or C plus, so
@@ -8271,6 +8329,7 @@ be like a remote control for TV, those old school remote control cars,
 not some of the new drones, stuff like that. Very simple electronics use
 ECMAScript, but generally ECMAScript documentation is the JavaScript
 documentation. It&apos;s lightweight object oriented scripting language.
+
 What that means is, being lightweight, it can be written very easily if
 you know how for any sort of process, you don&apos;t have to force its
 processing or its code into weird formatting to get things done, and
@@ -8280,6 +8339,7 @@ gets turned into an object somewhere in the DOM, so much so that when
 you write a JavaScript function, you then package that as a new object
 and you point things towards everything is an object in JavaScript,
 including the JavaScript itself. It&apos;s procedural. Object oriented.
+
 Procedural again, meaning it&apos;s all about creating behavior. Object
 oriented, as I mentioned earlier, and then it&apos;s functional style, it&apos;s
 very loose, it&apos;s based on the function, and you can write it for each
@@ -8287,6 +8347,7 @@ function, so you can write different ways to achieve the same function
 as well. Because there&apos;s lots of ways to get to the same task. Dynamic
 language means it doesn&apos;t need to be compiled by machine code, it&apos;s
 loosely typed. You don&apos;t need to declare variable types loosely type.
+
 Again, making it so everyone can write their own way, and it&apos;s meant to
 be read and interpreted in file. It&apos;s a nice easy language that as
 you&apos;re typing it out, anyone who has even the minimum proficiency can
@@ -8307,7 +8368,9 @@ videos is always good as well. And then here&apos;s some JavaScript basic
 programming introduction reading with elegant JavaScript, this is a good
 reading course here, so there&apos;s a nice textbook. But that of Node JS we are
 going to be using Inspector, so you can write JavaScript here and
-it works. So you can do 2+2 and you get
+it works. 
+
+So you can do 2+2 and you get
 the JavaScript will execute, that it&apos;s 4. So jump to the How to Guide,
 for sure this is embedding our JavaScript. How to add JavaScript to HTML.
 Few different ways you can write
@@ -8315,7 +8378,9 @@ the script inside the head, but ultimately what we want to do is the
 same way we link to it in external scripts, we want to link to it the same
 way we would as our CSS. You&apos;ll see sometimes in my demos embedded
 scripts the same way we can embed CSS right into the HTML file, you just
-open Script, write some JavaScript, then close it. And then the external
+open Script, write some JavaScript, then close it. 
+
+And then the external
 scripts, most commonplace is in the head right before the body, however, you will see
 a lot of older coders and a lot of older websites place the JavaScript below all
 their code so at the bottom of the HTML page. And the reason for that is
@@ -8325,7 +8390,9 @@ parsing deferred executes script when page finishes parsing, if you put neither
 it executes immediately then parses the page. So what does that mean? So
 here is the HTML parsing, what that means is it&apos;s processing
 the HTML code and executing it. Here you parse the HTML, script gets
-downloaded, and then script is executed. So if you&apos;re just normally
+downloaded, and then script is executed. 
+
+So if you&apos;re just normally
 doing it, and remember, this happens super fast, but it can slow down on slower
 software or slower computers so it can become noticeably different. So normal
 processing is the HTML 
@@ -8334,7 +8401,9 @@ the JavaScript is needed, it parses processing your JavaScript. And
 that&apos;s where sometimes when you see
 a slow page and not everything populates on the page, this might be
 happening, it&apos;s downloading the JavaScript and then executing it, and then
-finishes putting up the HTML on the page. So async allows for you to keep
+finishes putting up the HTML on the page. 
+
+So async allows for you to keep
 downloading and processing the HTML while the JavaScript downloads,
 that&apos;s really smart, and only then during the actual parsing and
 processing of the JavaScript does the HTML parse. Or deferred is often preferred,
@@ -8342,7 +8411,9 @@ you download in the middle and then the JavaScript doesn&apos;t
 execute till the end. The only choice between these is often
 making a decision where you put your website on throttle for a slow
 download and you see if it&apos;s okay to defer or if you need some JavaScript
-features to be up before the whole page is downloaded. So for instance, Gmail wouldn&apos;t
+features to be up before the whole page is downloaded. 
+
+So for instance, Gmail wouldn&apos;t
 look very good without the JavaScript anyway, so there&apos;s no reason to defer it,
 so it&apos;s going to be async. So you start processing,
 get the JavaScript ready, and then finish loading the page. And of
@@ -8351,8 +8422,8 @@ to the human experience, but it can be relevant for
 slower systems and slower downloads. Do I have that in my code? Yeah,
 you are, and I should have this actually async, it&apos;s an attribute, but yeah,
 just dropping async in there like that. So async, async deferred, you
-want to make
-sure you put that in your JavaScript and have it come in from the head.
+want to make sure you put that in your JavaScript and have it come in from the head.
+
 Other things we want to talk about with
 JavaScript, JavaScript is case sensitive, so the attribute foo with the
 lowercase does not equal the capital Foo, if I create code that has that in it, it
@@ -8362,8 +8433,9 @@ JavaScript, case sensitive really does matter. So for instance, if I
 have foo=2. Now, I&apos;ve created something called foo that is now an
 object that holds the number 2, so I can go foo+foo and I will get the
 answer 4. But Foo+4, so now Foo+foo equals 6. All fun coding stuff, so
-make sure you have it lowercase and uppercase. JavaScript statements
-should end with a semicolon, which I just wrote a whole bunch there
+make sure you have it lowercase and uppercase. 
+
+JavaScript statements should end with a semicolon, which I just wrote a whole bunch there
 without using semicolons, should because parsers will forgive you but
 proper coding, you definitely want to make sure you have semicolons in
 it. JavaScript does contain reserved words that you can&apos;t use, so I
@@ -8371,8 +8443,9 @@ created two variables that were foo and Foo, but we want to pop here and
 look at these reserved words. So these are words that have meaning that
 you don&apos;t want to use, so for instance, while and do, these are going
 to be words you&apos;re using inside JavaScript if else statements you make
-a lot of, all these are words you can&apos;t create objects. So I couldn&apos;t
-create a variable called debugger and put two in to, these are all
+a lot of, all these are words you can&apos;t create objects. 
+
+So I couldn&apos;t create a variable called debugger and put two in to, these are all
 reserved words, I can use any other word though. These actually don&apos;t
 do anything but are reserved for future use, which is all weird,
 whatever people think those might end up getting used for, so you don&apos;t
@@ -8423,7 +8496,9 @@ or fuud, now it&apos;s an undefined variable. But as you saw up here,
 I could just do year=3, or those undefined variables can just
 be put in the council like that. But we want to stay proper in our code,
 so we&apos;re doing var we declare it as
-a variable and then we assign it a value. Names are case sensitive and
+a variable and then we assign it a value. 
+
+Names are case sensitive and
 must begin with a letter or underscore so most always just begin with a
 letter. Can be a set of very basic data types, we&apos;ll talk about the
 data types in a second. No special characters in the name again,
@@ -8438,8 +8513,9 @@ just a normal variable I put a value to, I can also have an array
 with a defined width. So I do array and
 I generally do these blocks here. And an array is a series of variables,
 so it&apos;s packaging several values into a single variable and then zero
-index so first element is always zero. When I have an array and
-I have a series, say I have email one, email two, email three in that
+index so first element is always zero. 
+
+When I have an array and I have a series, say I have email one, email two, email three in that
 array. If I get to the first variable in
 that array, it is not variable one, it will be variable zero in that
 array. The different ways in which I can
@@ -8448,8 +8524,9 @@ it&apos;s undefined so that&apos;s the first. I can define it as null, so that
 resets it to be no value similar to undefined, but actually an official null,
 mathematically there&apos;s a difference. I can assign it in numbers, as
 you&apos;ve seen me do, True, false, boolean strings we see this quite a bit in code,
-oftentimes building an if then statement. I often are asking if
-inventory reaches ten, then re up order equals true and
+oftentimes building an if then statement. 
+
+I often are asking if inventory reaches ten, then re up order equals true and
 stuff like that. Strings, this is where I use little
 quotation marks in the value, so variable joe=5 if I
 use quotation marks here. Even if I use these quotation marks
@@ -8459,8 +8536,9 @@ variable, so we&apos;ll demo that here. I&apos;m going to give foo=2, two=2
 array, and you&apos;ll see it&apos;s
 already a different color. So now if I do foo+two, so now you&apos;ll
 see they just put the two side by side, it doesn&apos;t actually
-mathematically because it doesn&apos;t treat as a number, it treats the two as an array. So
-that&apos;ll come up a lot sometimes when we
+mathematically because it doesn&apos;t treat as a number, it treats the two as an array. 
+
+So that&apos;ll come up a lot sometimes when we
 do comparisons to see if they&apos;re equal, then this will be seen as
 equal, but we want exactly equal, which means the same data type. Now
 mathematical operators as you&apos;ve
@@ -8472,8 +8550,9 @@ is the slash, modulus is once you do division, you actually don&apos;t want
 the divider, you want what is remainder. So oftentimes when you&apos;re
 subtracting several orders that are worth maybe eight shirts each, you want to know
 what&apos;s the remainder, not how many times you can fill that order, but what is the
-remainder in your inventory after you fill that order. So increment and decrement and
-then add self and reassign are unique, and
+remainder in your inventory after you fill that order. 
+
+So increment and decrement and then add self and reassign are unique, and
 I mean they&apos;re encoding but they&apos;re a little bit more unique,
 so too we set it 2, and if I do plus plus, so now if I do too,
 you&apos;ll see that too is equal to 3. So too +too now equals 6 because
@@ -8482,17 +8561,16 @@ it is and it adds one to it. So that&apos;s an increment,
 decrement will subtract one. Can we use these for countdowns,
 here we have the add to self and reassign. So this is like an increment
 or decrement, except ultimately we want
-to have more than just one. So var car=5: car +=2: car is now 7. Next up
-is statements, statements
-are execution commands to the browser, so execute an order of
+to have more than just one. So var car=5: car +=2: car is now 7. 
+
+Next up is statements, statements are execution commands to the browser, so execute an order of
 presentation, so they go just like JavaScript
 from top to bottom. Browsers have built in
 statements functions, so confirm too+too and
 I go back to my website and too+too, yes no okay, so got to 6 and then
 prompt is the other one built in. So statements can be grouped together
 in blocks with the curly brackets and we&apos;ll demo some of that, it&apos;s
-used for
-defining functions or using conditionals. Ultimately this is creating
+used for defining functions or using conditionals. Ultimately this is creating
 our JavaScript functions, which then we&apos;ll talk about in a minute,
 where you have a series of statements
 together in some operational string. Next up of course is functions, so
@@ -8503,7 +8581,9 @@ will be the block of code. So let me pop open some JavaScript,
 this is a function, so here&apos;s a very basic function, initial map,
 and then I have here the function. I&apos;ve announced it,
 it&apos;s actually an anonymous, so I&apos;m not grabbing any variables
-I&apos;m just grabbing initMap. And now within that function, once this
+I&apos;m just grabbing initMap. 
+
+And now within that function, once this
 function runs, it&apos;s going to run this one, which is variable map, and
 then that has the function of center and zoom 8. And here&apos;s a more complex
 version of that, so you&apos;ll see here function init. If I open it up,
@@ -8527,14 +8607,17 @@ now it&apos;s true. Let&apos;s make too equal
 to a string now. Now I have foo is still
 equal to 2 from up here. Foo is equal to 2, 2 is now equal back to a
 string which I had said earlier. But now, if I do
-too==foo, I get true. If I do too===foo, I get false because
-it&apos;s adding that additional step of not just
+too==foo, I get true. 
+
+If I do too===foo, I get false because it&apos;s adding that additional step of not just
 asking if they&apos;re equal, so they&apos;re equal, but here are they equal and
 the same data type. It does come up occasionally,
 but not that much. Then we have greater than, greater than equal to,
 less than, less than equal to. With JavaScript objects, all JavaScript
 items are objects. Once I created these variables here, these variables 
-now become objects and I can point JavaScript to them. It includes functions, once I create a function,
+now become objects and I can point JavaScript to them. 
+
+It includes functions, once I create a function,
 any calculation. Once I create something
 inside JavaScript, it becomes an object. That&apos;s what&apos;s called
 object-oriented coding. Excluding core data types. I can&apos;t just do too
@@ -8561,16 +8644,18 @@ object inside, I can create an array. What I&apos;m doing here is once I&apos;ve
 a variable, is JavaScript code, object is just obj is what I just named it, equals. Then 
 I have here, a key, with colon, value, coma, key2 value. What I&apos;m doing here is
 I&apos;m creating an array of data that sits inside obj. Keys need to be a string with no 
-spaces and so here, for instance, I can do color: red, quantity: 5, instock: true. I 
-could also do password 1, actual password, password 2, actual password, password 3, 
+spaces and so here, for instance, I can do color: red, quantity: 5, instock: true. 
+
+I  could also do password 1, actual password, password 2, actual password, password 3, 
 actual password. Access or set properties here, object color, I&apos;m creating this
 color called blue, sets the object color to blue. Here I&apos;m grabbing
 obj, and I&apos;m changing color to blue. Let&apos;s do a proper variable,
 object equals, and then instock true. There should be a string, little
 things like that, gets caught up. There we go. Now if I do object.color,
 and there we go. I want to know the color, I&apos;m going to find out it&apos;s
-blue. But now I could also do color equals red, a string red. There we go. If I 
-do variable.obj, actually I know I just do obj will get me color:
+blue. But now I could also do color equals red, a string red. 
+
+There we go. If I do variable.obj, actually I know I just do obj will get me color:
 red, quantity: 2. The color has now shifted inside there. This is where you start
 getting more complex. Playing around with JavaScript and creating nice,
 complex arrays. Usually, you&apos;ll get something like this. Then you&apos;ll 
@@ -8580,6 +8665,7 @@ JavaScript Objects Literal format. Here we have a variable, my object equals, an
 a string property. Some string number property, boolean property which
 you saw me just build just now. But the value can&apos;t be
 any JavaScript data type including a function or other object. 
+
 These are the arrays that we&apos;re building. You want to make sure that
 as you&apos;re building them, they map back to a database on the back end
 and often write it in a way that makes sense to
@@ -8601,15 +8687,18 @@ there&apos;s no overlap between each condition. If there is, whichever
 condition is met first the block code, it won&apos;t test for any
 further conditions if a condition is met. Here, if inventory equals 10,
 send email to warehouse
-manager to buy more. Else if it&apos;s between
+manager to buy more. 
+
+Else if it&apos;s between
 10 and zero send an emergency email
 else, do nothing. Loops are going to expand
 on that a little bit more. Mostly you&apos;re going
 to do for and while. These other ones can get
 a little more complex. Run this block of code for
 this many number of times, or run this block of code
-while this condition is true. For instance,
-Facebook got busted. They had a JavaScript
+while this condition is true. 
+
+For instance, Facebook got busted. They had a JavaScript
 code that says, as long as someone had
 their cursor inside the comment box or inside
 the post box on their wall, what we call on focus. While on focus,
@@ -8627,18 +8716,16 @@ many number of times.
 So we have here JavaScript No
 attached to the DOM. JavaScript NO attach HTML JavaScript YES. This is
 how you want to attach it. So let&apos;s start with what my slide says. So
-event handling and
-what this is, an event is, let&apos;s say onclick would be an event. The
-user has just clicked on a button
-in JavaScript that&apos;s called, click or onclick, depending upon how
+event handling and what this is, an event is, let&apos;s say onclick would be an event. The
+user has just clicked on a button in JavaScript that&apos;s called, click or onclick, depending upon how
 now you use to code it, so you can attach it as actual HTML. And for the
-life of me,
-I tell students not to do this. And yet all 362 I still have students
+life of me, I tell students not to do this. And yet all 362 I still have students
 coming back and writing JavaScript inside their HTML and attaching the
-onclick
-function, as a method attached to the DOM. So this is going to be
+onclick function, as a method attached to the DOM. So this is going to be
 another way and then using the addEventHandler
-method of object. So this is how we want you to do
+method of object. 
+
+So this is how we want you to do
 object.addEventListener click, you define the listening and
 then you define my function. My function is going to be defined earlier
 as whatever function you want to run. Or here you have
@@ -8647,25 +8734,24 @@ like. But let&apos;s pop open the actual code here. So this is all in a
 single file. So I have my CS up here and
 my JavaScript down here, let me pop this open to
 show you what we&apos;re doing. So these are the two wrong ways. So here I
-click on Hello. I get this pop up Hello Daniel. That&apos;s what I want to
+click on Hello. 
+
+I get this pop up Hello Daniel. That&apos;s what I want to
 happen. So here I have function. I&apos;m announcing I&apos;m going to do a
 function. I&apos;m calling it myEventFunction() and
 it&apos;s an anonymous function, I&apos;m not declaring any
 value types in there. So this is going to be my function. Inside these
-brackets is
-what I want to happen. And it&apos;s very simple, an alert pop up,
+brackets is what I want to happen. And it&apos;s very simple, an alert pop up,
 which is a predefined function, that says Hello Daniel in it. So I&apos;ve
 written this, this is just
 sitting here inside my script. It won&apos;t do anything, it&apos;s not
 attached to anything inside my HTML. So when we&apos;re talking about an
-event
-handler, we&apos;re talking about code that then takes a function or
-something and
-then attaches to an event inside the HTML. Here I have var d3, that
-means inside JavaScript I&apos;m
-creating a variable called d3. I want that variable to equal
+event handler, we&apos;re talking about code that then takes a function or
+something and then attaches to an event inside the HTML. Here I have var d3, that
+means inside JavaScript I&apos;m creating a variable called d3. I want that variable to equal
 document.getElementById(div3);. So document as we established
 a little bit earlier, is the HTML. So it&apos;s looking inside the HTML.
+
 This dot attaches a question
 to it getElementById. It&apos;s looking inside the HTML for
 an Id called div3. So it finds it here, so again,
@@ -8673,13 +8759,13 @@ this actually I could do, separate that with the space again,
 just show it&apos;s separate. D3, so now I have this
 variable inside JavaScript. I have this function just sitting there. Now
 I need to attach the two. So d3 I want to addEventListener. So I&apos;m
-listening for
-event on d3 and it&apos;s click. So click is predefined in JavaScript. So
+listening for event on d3 and it&apos;s click. So click is predefined in JavaScript. So
 now I want to listen for a click. And then when someone clicks,
 I want my function to run. So now I&apos;m attaching my function. So d3,
 this click now attaches it and that brings me to the situation where
 when I click on it, I get this pop up. Now the two wrong ways I see a
 lot of people do it is this way. So this one&apos;s really bad, this is div id1.
+
 And here they use this onclick,
 right on the HTML, on click, Hello Daniel. It seems really clean and
 easy compared to what I just did. But the worst thing about it is it
@@ -8690,7 +8776,9 @@ I can only have this pop up. Whereas here,
 now that I added an event listener, I could actually go d3, add a second
 event listener all onto d3 and keep adding event listeners and
 have several functions run. So very rarely do we
-want a single function. And then got my function, got my alert,
+want a single function. 
+
+And then got my function, got my alert,
 this is how we did it properly. Here, I&apos;m still writing everything,
 I&apos;m still creating the onclick. But then again,
 I&apos;m running this d2.onclick. And instead of adding
@@ -8701,7 +8789,9 @@ can&apos;t then go d2.on click again. This one will override this one. So I
 still only single bind it. So again,
 this is the way you want to do it. And the only reason I&apos;m complicating
 you with all these different ways of binding is because I do see kids,
-especially doing this one. So now a little bit about the DOM objects. So
+especially doing this one. 
+
+So now a little bit about the DOM objects. So
 DOM, it&apos;s object representation
 of the HTML document and all other things related to it. All elements
 are represented by objects in JavaScript. The Dom is an API that can
@@ -8714,7 +8804,9 @@ DOM name. Id getElementById is a standard DOM name. All these things
 then represent it in a tree flowing outward. The most common id is 
 getElementById. So that&apos;s the most common way to
 find stuff inside of the HTML. But you can also go for window. Which
-window is not the HTML. It&apos;s going to be this space here. So you can
+window is not the HTML. It&apos;s going to be this space here. 
+
+So you can
 ask orientation of window. You can ask operating system of window. You
 can ask history of window, for instance, where they came to before
 they ended up on this web page? So you go beyond just the HTML and
@@ -8743,26 +8835,29 @@ to be cutting and pasting their code and
 this is what you&apos;ll find early on in
 JavaScript development. Very often you&apos;re cutting
 and pasting code from JavaScript APIs and you know enough to craft it
-to fit your website. Here is Google Maps
+to fit your website. 
+
+Here is Google Maps
 platform and this is really cool because you can use this map and if you
 get talented enough, you learn enough about it, you can make these maps,
 speak in many different ways. During the Syrian
 Civil War early days, there was a lot of
 unknown going on there. I read this story about a Syrian refugee in
-England following Twitter,
-following the UN, following all the updates
+England following Twitter, following the UN, following all the updates
 and piecing together the data they had about where the different
-factions were. This Syrian refugee had done so well that news agencies
+factions were. 
+
+This Syrian refugee had done so well that news agencies
 starting with BBC and The New York Times and
 others started referring to this refugee&apos;s map to find out what was
-actually
-going on on the ground. Turns out this refugee
+actually going on on the ground. Turns out this refugee
 was a teenager, just had the skill,
 had the time, and was following the
 different Twitter feeds of the official
 groups on the ground, seeing where things overlap, and built using
-Google Maps API. This really fascinating
-map that then became authoritative
+Google Maps API. 
+
+This really fascinating map that then became authoritative
 on the subject. You&apos;ll find maps in a lot of different websites
 using this API. The basic API if you cut
 and paste it will give you Walla Gong here with the
@@ -8773,7 +8868,9 @@ Maps demo here is basic map. Here I have the HTML
 already pulled in. Here&apos;s the basic
 map and it&apos;s for developer purses you got to pay to have that tag taken
 off. You can mess around
-with it here it starts on this Australia tab. You drop your script
+with it here it starts on this Australia tab. 
+
+You drop your script
 source in the head and this is pulling down from
 the Google Maps API and you&apos;ll see here this
 JavaScript question mark after this is my API key. Then I have equals
@@ -8785,7 +8882,9 @@ using JavaScript object, the container element
 in your Dom and then pass the container element
 and the object into the map, so variable maps equals
 new Google maps, and you put all this
-function and it runs. Here, I&apos;ll ran through that quick purposely
+function and it runs. 
+
+Here, I&apos;ll ran through that quick purposely
 because it&apos;s
 easier to look at the code, you have the Dom object
 you need to create. Then you create a
@@ -8795,7 +8894,9 @@ what map equals. Now I&apos;m going to do
 function in it map so I&apos;m initiating this is the name of the function,
 it&apos;s anonymous. In that function, I&apos;m going
 to grab the variable map, I&apos;m going to make map
-equal a new Googles. This here is coming from here, so that&apos;s already
+equal a new Googles. 
+
+This here is coming from here, so that&apos;s already
 known Dom objects. It&apos;s grabbing the map and it&apos;s telling me where to
 put it. Document.elma ID is
 going to be my map. Now I&apos;m grabbing this and placing this Google
@@ -8808,7 +8909,9 @@ here from the JavaScript. Here is script deferred
 source API key and you&apos;ll see
 there your API key. You can sign up for an API key, if you need it you
 can click on there, you can go there and insert it, or you can start to get your
-own API key if you need it. I want to emphasize
+own API key if you need it. 
+
+I want to emphasize
 here, do not pay for an API key if
 you don&apos;t want one, just use mine for
 this project if you want to load it without
@@ -8819,7 +8922,9 @@ those basics, so there are two
 required options for every map as I said. Now, once you get through
 this basic reading, I encourage you to read
 through this much more in depth of what I just
-explained really quickly. Then we&apos;re going to
+explained really quickly. 
+
+Then we&apos;re going to
 come over here and you see there&apos;s some
 tutorials, map fire basin, so we&apos;re going to scroll
 down a drawing on the map markers, shapes,
@@ -8830,7 +8935,9 @@ find three features. You click on &quot;Markers&quot;. A marker identifies a
 location on the map, by default a marker
 uses a standard image. Markers can display
 custom images in which the case they are
-usually referred to as icons. You come through here, this is all getting
+usually referred to as icons. 
+
+You come through here, this is all getting
 my map up and going still. Then you have here
 this unique code, so new Google Maps marker
 so this is a predetermined. When you pull in
@@ -8850,19 +8957,22 @@ but I have the new joker there. If you hover over the new joker,
 this little pop up happens and you can close it back up. You&apos;ll also
 know some other things I want to see, I do not want your map to take up
 the whole page in project three. So you&apos;re going to use some CSS here.
+
 I put a little border around my map. I shrank my map and all that can
 be found inside this code here. So my code super simple, right? Here&apos;s
 my head meta title link
 script out to my Google API. So it&apos;s pulling in the API,
 pulling in the style here and then pulling in my own unique script. So
 script async type, text/javascript, source it base. So the only code I&apos;m
-adding here is this div. And actually this should be tapped over. So
-this div here and then a div for the canvas. So the div for the wrapper gives
+adding here is this div. And actually this should be tapped over. 
+
+So this div here and then a div for the canvas. So the div for the wrapper gives
 me that nice red on the outside. And then I have the div inside
 that becomes my canvas. Now very simple CSS wrapper width, height,
 background margins overflow hidden. So I give it this width of 850
 pixels. Margin is going to center for me and
 then just some color, width, height, background color, canvas margin.
+
 Don&apos;t really need this
 background color too much. But this is adding that little
 extra canvas style to it. The reason being is I want to make
@@ -8879,6 +8989,7 @@ the rest of it doesn&apos;t work here,
 this page says it works. So that&apos;s a nice test. And you&apos;ll see the
 gray background. So I got everything right, but for
 some reason my map isn&apos;t working. Maybe my API key isn&apos;t working.
+
 Maybe I wrote the code wrong. But I scaled back everything and just did
 this alert to make sure I&apos;m
 actually attaching the event function. So let&apos;s look at the event
@@ -8888,7 +8999,9 @@ listener. So on Google Maps Dom Listener,
 I&apos;m listening to the window, not to my document, but to the window. I
 want to know when the page loads
 initiate this function alert, it worked. This is going to be the event
-listener that you&apos;re writing for Google Maps. So take all this and write this as
+listener that you&apos;re writing for Google Maps. 
+
+So take all this and write this as
 is and then put your Google code inside there so you&apos;ll see,
 I now have this Google code. So variable element document getelmbyd. So
 now I&apos;m going to grab the canvas. I want to drop my map inside the
@@ -8901,9 +9014,11 @@ instead of traditional on the top or side. This is all still within
 this initial init function. Variable my map. New Google Maps map. L map
 options. I&apos;m going to change up those
 options on my map variable marker. So here&apos;s what we just went over.
+
 I&apos;m grabbing the marker. New Google Maps marker. I want the position on
 my location, which we already established was here
 my location map, my map animation. I want Google Maps Animation, bounce.
+
 Where did I get this? Was reading through these specifications. You&apos;ll
 see map options,
 marker, hello world. Remove the marker. Animate the marker. So now cool,
@@ -8925,12 +9040,14 @@ we first go here. So this is it Berlstein hall, blah blah, blah. because
 then I have event listener marker, mouse over function. I then have this
 whole thing get attached to if I mouse over my little image icon. So that&apos;s 
 the quick and the dirty of it. But I encourage you to just kind of mess around with this.
+
 Add a new page to your JavaScript put the navigation should be the same
 CSS navigation. Add a little box. So you shrink the window of the div
 and then drop the Google Maps inside that div. Mess around. Now the
 other thing I&apos;m going to emphasize is where&apos;s an easy place to get the
 GPS? Moscow. Let&apos;s say I wanted the Kremlin, wherever that is. So
 there&apos;s the Moscow Kremlin. I click on here. I get this little thing.
+
 But if I go here and I ask what&apos;s here on any Google Maps, you&apos;ll get
 this pop up here, and there is the GPS locations of wherever you go. So
 your house, landmarks anywhere. And I was just watching a TV show about
@@ -8967,9 +9084,7 @@ Below is a list of the content referenced in the Lesson 3 Video.
 <h3 id="ch7-9">7.9 JavaScript Objects, Event Handling, and DOM (Document Object Model) - Part 1 (9:25)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In Lesson 4, we&apos;re going to get a better understanding of
-
 the objects we&apos;re trying to grab in HTML and
-
 attach our JavaScript to. Let&apos;s talk about objects. Now, we&apos;re going
 to specifically talk about document objects, browser objects in this
 lecture. But again, JavaScript is object-oriented. It means everything
@@ -8979,8 +9094,9 @@ also objects. It&apos;s pretty clear document is HTML, so the document
 object is HTML. When you&apos;re trying to figure out things about HTML, you
 go document object and you go inside document object and you look for maybe a ID or
 class, things like that. But to give a better sense of how everything is an
-object, including events, so let&apos;s look at browser objects. These are
-objects in the DOM that are not necessarily associated with the HTML,
+object, including events, so let&apos;s look at browser objects. 
+
+These are objects in the DOM that are not necessarily associated with the HTML,
 but also are part of the web experience. An event represents the state
 of an event. When we do event handling, that would be, for
 instance, on focus. We&apos;ll talk about some more event handling or event
@@ -8992,6 +9108,7 @@ looking at cookies, to find that history. Location, so it gives read,
 write access to the URL address bar. This is jumping to another web
 page, things like that. Jumping to another part. Following that, using
 this location of history. This is how we build marketing relationships.
+
 You put this little advertisement for Amazon on your website and they
 click through it to buy something. You get a little commission going
 back to you. Status sets or returns the text in the status bar of the
@@ -9000,7 +9117,9 @@ the window. This can be frustrating. Like I&apos;ve said a few times in my
 various classes, my bank, whenever I&apos;m using their messaging software,
 every time I finish one, they just forcibly close the window and I have
 to navigate back, it&apos;s really strange. Confirm a dial like box that
-pops up. Focus sets focus on the current window. This is very specific
+pops up. Focus sets focus on the current window. 
+
+This is very specific
 here, but here I talked about event objects. We&apos;re going to talk a
 little bit more about these event objects. Event objects are usually
 something the user is doing to or on the page that we want to attach
@@ -9011,6 +9130,7 @@ it contains the URL where they browsed. If I&apos;m looking to grab those
 cookie information of where you&apos;re coming from, that you&apos;re ending up
 on my website. I&apos;m going to write some JavaScript that says grab the
 history. But it&apos;s going to need, when do you grab the history?
+
 Obviously, a good time is onload. Once the page finishes loading, then I
 go and look at the cookies. That&apos;s what is the idea of event object.
 It&apos;s when you have other code written, these are the things you attach
@@ -9019,7 +9139,9 @@ This is very common. Let&apos;s pull up Google here, so we have Google. As
 soon as I start typing in something, then this is onfocus, dreeaf. Then
 when I go off focus, when I jump up here, the cursor is not there
 anymore. There&apos;s the cursor, this is onfocus, this is blur, onfocus,
-blur. You&apos;ll use this onfocus here an element gets into focus. This is
+blur. You&apos;ll use this onfocus here an element gets into focus. 
+
+This is
 very common, so onblur and onfocus are easy for when you&apos;re inside a
 JavaScript form element. Onchange the content of a form, changes,
 onclick, the mouse clicks on objects. Obviously, we&apos;re going to use
@@ -9028,7 +9150,9 @@ that we check. Definitely uses a lot in 362 on error. If there&apos;s an
 error with maybe email or document image load, something pops up to let
 you know. Onkeydown, onkeypress, onmousedown, onmousemove. These all get
 intimately involved with video games and other things that are HTML
-based, and on submit is a very common one. The Submit button is check
+based, and on submit is a very common one. 
+
+The Submit button is check
 clicked in a form. This is just a sampling of events, tipping the
 screen, tilting the screen. There&apos;s anything involving the browser,
 anything involving the HTML form, the CSS, anything involved with the
@@ -9040,6 +9164,7 @@ one open. This is the way we want to do it. Hello, Daniel. We are using
 the ad event handler method of an object. So object, document, window,
 whatever, add event listener. We then attach the period to add event
 listener. No space again, the event listener is defined as two things.
+
 It is the event object we want, and then the function we want to attach
 to it. So click is the function onclick, so attachEvent,
 attachEventListener. Event is going to be onclick, eventListener is
@@ -9050,21 +9175,25 @@ attached to the DOM. Here is the proper way window dot on the window
 addEventListener, click, myFunction, so if they click anywhere on the
 window, this my function runs. Or as anonymous function, so here we
 could say here I&apos;ve pre-determined what my function means here I just
-actually write function anonymous and then curly brackets. Then I write
-the actual function I want to happen and the curly brackets and the
+actually write function anonymous and then curly brackets. 
+
+Then I write the actual function I want to happen and the curly brackets and the
 eventListener. These are those other two, this is going to be actually
 HTML code here. Body onclick, myFunction, and then as a method where we
 do Windows and we attach the actual event. Here we&apos;re doing
 addEventListener and then defining the event. Here we&apos;re actually
 attaching the event to the window and then it equals this. Again, both
 of these only single bind, popping open this code. Again, this is all in
-there. Script function, myEventFunction gets defined here. I&apos;m popping
+there. Script function, myEventFunction gets defined here. 
+
+I&apos;m popping
 up alerts. Then I create a variable called d3, and in that variable I
 want document, so somewhere in my HTML get element by d, straightforward
 d3. I&apos;m grabbing this third box here which has a little blue
 background. Now I&apos;ve created a new object and a variable called d3. Now
 I&apos;m going to grab d3 which is refreferencing back to here. I&apos;m going
 to addEventListener. The event listener again gets defined as the event.
+
 Then the function you want to run, so here was the function I define and
 I&apos;m attaching it to clicking on this entire div, which is this
 functionality. That&apos;s pretty straightforward. That&apos;s how I want you to
@@ -9089,27 +9218,33 @@ have it wrapping here, we can think about the code like this, how we
 write it. Here&apos;s a visualization to think about it like the dom. HTML
 embedded the HTML is head and body embedded, there is title and meta
 div. Inside the HTML is browser, HTML is inside browser, what&apos;s also
-attached to browser. Then there&apos;s these other things that are subsets
+attached to browser. 
+
+Then there&apos;s these other things that are subsets
 of browser. Down here we get down to div. This div inside of it has CSS.
 So if I pop open actually let&apos;s see if I was to grab this div here, so
 I&apos;ve created d3. This div here inside of it is also going to have all
 this color. Now this color and style and width is going to be
 replicated. There&apos;s three DOMS that have this. So this div has it
-inside it. This div has inside it because
+inside it. 
+
+This div has inside it because
 all these divs and this div. So as the browser renders this, it takes
 this and literally multiplies it into three to create this div, to
 create this div and to create that div. So your DOM now is not just this
 singular style. It&apos;s got that same style replicated for each one of
 these because div applies to all. And so that is all inside this div,
 and that&apos;s what the DOM is. It&apos;s making you the actual rendering that
-you see on your screen and trying to understand inside of it. So
-accessing the DOM elements use methods of document. So the most common
+you see on your screen and trying to understand inside of it. 
+
+So accessing the DOM elements use methods of document. So the most common
 is by id is you&apos;re looking to attach id to the document. So variable a,
 so I&apos;m creating a variable called a and variable A is going to equal
 document which we establish as the DOM name for HTML. I want to get an
 element by D inside the document and then whatever the element id is,
-you can also access by class tag and selector among other things. But
-those are the four common ones, you use the object get attribute source
+you can also access by class tag and selector among other things. 
+
+But those are the four common ones, you use the object get attribute source
 is another thing to go beyond. Once you grab this id, you might then
 grab the source for instance. So the method to get an attributes value
 from the object is another way. So outside of grabbing just one of these
@@ -9120,6 +9255,7 @@ the DOM and get inside there. So for instance, get attribute I&apos;m
 grabbing a source here, I might want to get the inner HTML that&apos;s going
 to be this code. So the actual text between here&apos;s my HTML, here&apos;s my
 HTML and inner in between them is the text that someone actually sees.
+
 So this is our inner HTML to set the HTML contents to an element, can
 you use object value to get the contents of a form control? All right,
 so once we have these object value, these are going to be the four
@@ -9127,7 +9263,9 @@ common ones that we&apos;re trying to get one of these DOM elements out. So
 an element by name, so get elements by tag name p, easy, all the p&apos;s I
 want to have this or that, but rarely do you want to use this to access
 DOM. Sometimes if you want to erase all the p things like that, that&apos;s
-easy. For instance to grab all the p or all the form elements, maybe
+easy. 
+
+For instance to grab all the p or all the form elements, maybe
 because they filled out your email list, you don&apos;t want to have them
 jump to a new HTML page. You just have a little JavaScript that takes
 all the form elements, gets rid of them and just adds a new p that says
@@ -9135,8 +9273,9 @@ thank you for signing up. So they&apos;re actually still on the same page
 and if they hit refresh, the form will come back by id attribute. So
 this is going to be one of the most commons because you can target
 directly an id is only used once. So you put this id on there, you know
-you&apos;re targeting that exact same thing you want. So here is
-document.getElementById and then maybe lead photo is the id and we&apos;ll
+you&apos;re targeting that exact same thing you want. 
+
+So here is document.getElementById and then maybe lead photo is the id and we&apos;ll
 demo that in the next slide by class. Little less common, but sometimes
 we may have a few things we want to grab. So we can throw a class on
 there that grabs one or grabs several of them. Maybe we want all our
@@ -9151,7 +9290,9 @@ that and this is very common with jquary. All right, accessing an
 attribute value. This is an example I put together. I should colorize
 this but get attribute. So we&apos;re going to grab something using the id
 and then we&apos;re going to grab its attribute. So here image source, so
-I&apos;m grabbing image source. This is the HTML, sorry to clarify that
+I&apos;m grabbing image source. 
+
+This is the HTML, sorry to clarify that
 image right img src. This is my source equals stratocaster. So I&apos;m
 grabbing an image called stratocaster. I have my alt electric guitar and
 then I give it an id lead image. So this is very straightforward HTML in
@@ -9165,7 +9306,9 @@ using the getAttribute on big image. Remember, big image was created as
 a variable, grab that source and this is a comment. It says it would
 alert stratocaster. So now this image pops up in the alert. Here&apos;s a
 few different ones. So set attribute these I did colorize variable, big
-pick. So I&apos;m going to equal get document get element by d again lead
+pick. 
+
+So I&apos;m going to equal get document get element by d again lead
 image. So again, always referring back to here big pick. So now I&apos;ve
 created the variable, I can just call it out. Set attribute source,
 picks, lead, photo, two. So now I&apos;m looking for a picks lead photo and
@@ -9174,19 +9317,21 @@ name and it&apos;ll find it, put it back in. And so now all of a sudden this
 image or this stratocast rows appear and we&apos;ll get lead photo instead
 inner HTML. So variable intro div not referring back to this anymore,
 but you can imagine intro div document get element by d an intro div the
-variable. Now I want to set the inner HTML. So wherever this div is,
+variable. 
+
+Now I want to set the inner HTML. So wherever this div is,
 I&apos;m going to put a p inside of it. If there&apos;s not one already there
 that says p. This is our intro text closing out the p. So I&apos;ve grabbed
 this and put it inside this div. And in here I&apos;m going beyond the HTML
 and reaching the style. So the style that&apos;s now
-
 associated with this text. So document getElementById intro same intro
 style. So still getElementById.style. So I&apos;m looking to this id now
 look to its style.color. And you actually have to learn all these
 because they are going to be a bit different. But for the most part in
 jquary, these things are a little bit different. Here you&apos;re generally
-going to be whatever CSS call out, you&apos;re grabbing that CSS color. So
-color we know is color of the text hashtag FFF that&apos;s I&apos;m setting it
+going to be whatever CSS call out, you&apos;re grabbing that CSS color. 
+
+So color we know is color of the text hashtag FFF that&apos;s I&apos;m setting it
 there or here. Document.getElementById by dintro style, background
 color. So again, same CSS call out equals &lbrack;SOUND&rbrack;. So those are going
 to be different ways, just showing you how JavaScript can reach into any
@@ -9194,6 +9339,7 @@ part of the DOM and grab out, change things, set it. So here I could ask
 value instead I could say dot value and then I&apos;d get this color if that
 was already set, things like that. So here a little bit more on the
 JavaScript DOM. It&apos;s also in the last lecture, click on some of these.
+
 &gt;&gt; Speaker 1: And now as we learn more JavaScript event handling, I
 hope you have a better understanding of what it is we&apos;re attaching that
 to in our HTML and CSS.
@@ -9264,12 +9410,14 @@ JavaScript and how to grab objects and interact with them, and then
 we&apos;re going to learn about jQuery. JQuery is a powerful library of
 JavaScript. It is JavaScript. It interacts as JavaScript with the
 website, but it&apos;s a layer above that makes it easier for you to write.
+
 For instance, we&apos;re going to have video sliders, which if you think of
 a website and maybe you have at the top of the website a little image,
 and then it slides and another image comes up we&apos;re going to use jQuery
 to write those. That&apos;ll be something you&apos;re going to implement on your
 project that should make your website feel a little bit more alive, or a
 little bit more movement in it that&apos;s casual and more exciting.
+
 Finally, we&apos;re going to have a responsive video lesson. This is taking
 your YouTube video, or taking a video that you have actually inside
 hosted on your repository, and make it change sizes, make it fit any
@@ -9277,6 +9425,7 @@ screen so that it&apos;s not really looking weird on bigger websites or
 smaller websites depending on what you initially coded and that&apos;s
 responsive design. What we learned about in CSS. Responsive video is a
 little bit more tricky. That&apos;s where we&apos;re saving towards the end.
+
 Finally, we&apos;re going to wrap it all up with what this means for working
 with frameworks and this is your pre-built website tools like Bootstrap,
 or Foundation, or Squarespace. Once you have one of those tools in front
@@ -9323,6 +9472,7 @@ most. I decided to give that away. Now these last few semesters, make
 sure as you click on each one of these, if you get a air load, this is
 probably the first thing, is make sure that this curly bracket is
 closed. This curly bracket is closed. This curly bracket is closed.
+
 These are close. I always click on them and make sure they&apos;re closed
 and they&apos;re just not any hanging around. Because that&apos;s sometimes a
 lot of students caught up. This window add event listener that stands on
@@ -9344,6 +9494,7 @@ open, our style. Styles are very straightforward. Now on
 d4.addEventListener, so I&apos;m adding another EventListeners. I have this
 EventListeners, this thing all loads. But then I&apos;m adding new
 EventListeners within this. On this div, add another EventListener.
+
 Someone clicks on it, myEventFunction which we defined here, now
 there&apos;s going to be pop up that says hello. This is now just been
 attached to me clicking on d4. Also on d4 now you can see each one of
@@ -9351,6 +9502,7 @@ these is semicolon. It&apos;s ending I could add a space there to show
 they&apos;re different things. Whereas this here is one defined function,
 all of this is one defined function. You&apos;ll see here this is all then
 another defined function. Each one of these are individual definitions.
+
 I&apos;m going to leave it with those spaces there. Now I&apos;m going to add
 one more d4 addEventListener, again I click. Now this is why we do the
 addEventListener because here I can do click. If I did a listener like
@@ -9361,6 +9513,7 @@ just going to write this function all right here and attach it. That&apos;s
 how I do that. Then I close out this EventListener, is closed out here
 you&apos;ll see the two reds. I add function consol log, I was clicked
 something I didn&apos;t quite demo here. I go here to Inspector, to Consol.
+
 You&apos;ll see here I was clicked, added to the consol log that can be
 grabbed as anonymous. What&apos;s the word I&apos;m looking for? Anonymous data
 that can be sent back to the server. Things like that. D4 I&apos;m referring
@@ -9371,8 +9524,9 @@ color, I&apos;m going here. You will notice here background/color looks
 different than backgroundCapital color. Those are the subtle little
 things you are going to need to recognize that are different. JavaScript
 has its different names than the CSS and = #COO. This is the red that it
-changes to. Then again d4, all inside this function in HTML. Here you
-can see there with the quotations. Strong, goodbye, strong. If I go back
+changes to. Then again d4, all inside this function in HTML. 
+
+Here you can see there with the quotations. Strong, goodbye, strong. If I go back
 here, I have a div, there&apos;s no strong so changing this. If I grab the
 inner HTML and I don&apos;t refer to this again, I&apos;m grabbing all the inner
 HTML and saying it is equal to this. I don&apos;t have to delete whatever&apos;s
@@ -9382,6 +9536,7 @@ out. Then the Windows event listener grabs the whole thing and executes
 it. I&apos;m going to go to refresh. Let us see here, my consolog, nothing
 there. I reloaded the page. I&apos;m going there, I&apos;m clicking on it. I get
 my pop up. The first thing function at event listener alert variable d4.
+
 I get to my first actual action based on first this, then this. I&apos;m
 attaching d4 to this and an event listener get my pop up. Nothing yet. I
 click &apos;&apos;Okay&apos;&apos;, changes the color, changes the text. After I finish
@@ -9399,8 +9554,9 @@ Now this code, you are going to want to insert into that finish up a
 little bit. We have here will pop up, I have JavaScript worked. This is
 text, so I want to go back to my code here. You can go then into the
 inspector. Use FC value to inspect to see that the input. Now this is
-just some extraneous code to show you I&apos;m setting FC value here. If I
-can set FC value here just taxed dude, got to save, back here. Refresh.
+just some extraneous code to show you I&apos;m setting FC value here. 
+
+If I can set FC value here just taxed dude, got to save, back here. Refresh.
 Just some text dude, I&apos;ve inserted that text using FC value equals. Let
 us refresh this JavaScript worked and alerts and then we&apos;re going to
 use FC value because here variable FC get element by D text control.
@@ -9428,13 +9584,16 @@ of the browser inconsistencies. As we talked about in the early
 Javascript days, there was the browser wars as each browser got faster
 and faster implementing Javascript. But there was inconsistencies where
 they implement certain features of Javascript very differently.
+
 Javascript needed a little bit of a flattening of those inconsistencies,
 so there wasn&apos;t so much difference between the browsers, especially
 Internet Explorer. jQuery was written in 2005 by John Resig, initially
 to smooth out those inconsistencies, but ultimately it became so
 lightweight and simplified that it became its own library of Javascript
 and it&apos;s just a faster, easier way to write Javascript. Once the code
-gets implemented, it&apos;s still Javascript. If you pull up the jQuery
+gets implemented, it&apos;s still Javascript. 
+
+If you pull up the jQuery
 library, here is jQuery. This is Version 1. This is way old, 2005, is
 the copyright, but this version is pretty old. But as you look through,
 what&apos;s happening here is these little jQuery shortcuts are being turned
@@ -9442,14 +9601,17 @@ into Javascript. That&apos;s essentially what jQuery is, it&apos;s ways of
 writing a little bit shorter script. It still is Javascript getting
 rendered by the browser. You still need to use basic Javascript stuff we
 discussed. But it simplifies many of the DOM scripting tasks. Add the
-jQuery Javascript file to your HTML page. First, you pull in the jQuery,
+jQuery Javascript file to your HTML page. 
+
+First, you pull in the jQuery,
 just like we showed. You have to pull in the Google Maps API. You have
 to pull in the jQuery library, and that makes jQuery work. Use Google
 CDN to load the library for performance increases. It&apos;s no longer
 compatible with any Internet Explorer so jQuery is obviously Internet
 Explorer so is getting old now, but you&apos;d be amazed how many companies
-still run it. All code should go into the document ready functions. Let
-me pull up jQuery example. I have here the script embedded just to make
+still run it. All code should go into the document ready functions. 
+
+Let me pull up jQuery example. I have here the script embedded just to make
 things easier to have a bunch of files together. First, I&apos;m pulling in
 my jQuery, jQuery 11. Regardless, I need to attach here jQuery is this
 dollar sign. This dollar sign as an object in Javascript is this entire
@@ -9458,8 +9620,9 @@ document. Document, which is the HTML, attach the ready function, this
 is the initial and you see opens and closes there. Then I don&apos;t
 actually need to use the dollar sign throughout, but I attach the dollar
 sign throughout as a reminder that I&apos;m writing jQuery instead of
-Javascript. You&apos;ll see subtle functions that are a bit easier. Here,
-jQuery attached to pound sign btn1. I don&apos;t have to write out GIT
+Javascript. You&apos;ll see subtle functions that are a bit easier. 
+
+Here, jQuery attached to pound sign btn1. I don&apos;t have to write out GIT
 element by ID. I can just write the ID and jQuery recognizes that if I
 write something with a hash tag after it, I&apos;m instantly using get
 element by ID. I don&apos;t have to write that code out, all of a sudden I
@@ -9467,6 +9630,7 @@ pull that away. Then I don&apos;t have to write the hash tag, I just attach.
 Click to it and then function event. An alert obviously looks the same
 and click is written in the alert so here, hover function, add class,
 color class, remove class. It&apos;s a little bit lighter. Pop it open here.
+
 It&apos;s not the one I wanted. Here, click this page. I click on it, but as
 I hover over, I get a little red border there. Remove class, color
 class, add class, color class and you&apos;ll see here, I&apos;ve actually had
@@ -9478,6 +9642,7 @@ default. This is the class I&apos;m adding on and off. I don&apos;t want to
 write this style code in there, I just remove the class added on and
 off. If you go back here, pop up an inspector. Remember this is what&apos;s
 getting rendered. Watch here on this A or actually it&apos;s on the div.
+
 You&apos;ll see the class as I hover over it is getting added and
 subtracted. Pretty cool. You can do that normal Javascript as well. Back
 to the lecture. The dollar sign is the jQuery object. It pulls all that
@@ -9487,7 +9652,9 @@ code ready. Just like you did in add seven, you had the attached to the
 page load. Here is just document ready is the function you use in
 jQuery. Then element this is what I showed, elements are selected using
 the CSS style selector so variable element I create an element here,
-dollar sign just ID returns a jQuery object. This is the web page that
+dollar sign just ID returns a jQuery object. 
+
+This is the web page that
 you can go to. Let&apos;s see what version we&apos;re now so 351. I had pretty
 old version there. Downloaded, but it still works and all you do is you
 have the jQuery. You download the library there, or you can link out to
@@ -9508,7 +9675,9 @@ significant amount of time in code, and it makes it easier to read the
 code. So, here JavaScript versus Jquery. So, variable JS. I&apos;m creating
 a variable called JavaScript here. Variable dollar sign jquery. So, I
 have to add this dollar sign, so that&apos;s a little bit more, but equals
-document get element by D box. Here I just go equals jquery box, hashtag
+document get element by D box. 
+
+Here I just go equals jquery box, hashtag
 box. So, significantly less code, significantly less writing. Real
 quick, easy to do. JS innerHTML equals some text here. Now they have my
 object JQ with the dollar sign dot HTML instead of inner HTML and then
@@ -9524,6 +9693,7 @@ that&apos;s a nice one. That&apos;s pretty fancy. Maybe I should add that to my
 demos. So, it&apos;s real simple, you&apos;re usually given a little bit of some
 HTML, so very strict HTML here, you usually need to pull in their box
 slider style sheet and then you need to include your script in theirs.
+
 Or sometimes it&apos;s easier to keep the script separate, but to merge the
 CSS and the style. So, here they have the style just actually embedded.
 And then you often always need to pull in the library here. So, this is
@@ -9531,15 +9701,17 @@ again Google APIs pulling in the jquery library. This is the box slider,
 makes the box slider work. So, that&apos;s the JavaScript for that. And then
 here is the style sheet which you&apos;re not actually linking out to, but
 here it is embedded. So, you might want to drop that style sheet in
-there or this style into the style sheet. This then is the div. So, here
-you have class slider, ul box slider. So, you just cut and paste this as
+there or this style into the style sheet. 
+
+This then is the div. So, here you have class slider, ul box slider. So, you just cut and paste this as
 is. And here you see their script is actually embedded even though they
 have linkout script there as well. I think I actually added these to
 show you how proper should go. So, document ready function, box slider,
 box slider mode fade. And you&apos;re usually looking in their JavaScript
 here, let&apos;s see box slider. It&apos;s mini. So, go to their website and
-you&apos;ll usually get a little explanation in the options up here. So,
-you&apos;ll see here the different type of options, infinite loops. The good
+you&apos;ll usually get a little explanation in the options up here. 
+
+So, you&apos;ll see here the different type of options, infinite loops. The good
 ones always have several options like that to add into the code. But, in
 this case, really all you&apos;re doing is cutting and pasting this or if
 they have it already predetermined. And this document ready function,
@@ -9552,8 +9724,9 @@ Jquery and maybe adding a few modes if you want, or a few options. And
 then you define the images. And you can actually add additional images
 if you like. So, let&apos;s say here we had Toy Story, so you could add as
 many images you want. And for most of them, it keeps going and adds
-another dot on it. So, I just have the one box slider demo. But
-ultimately, go to Google and you&apos;ll find plenty of box sliders that
+another dot on it. So, I just have the one box slider demo. 
+
+But ultimately, go to Google and you&apos;ll find plenty of box sliders that
 work out for you. So, I have one other Jquery demo here. So, here with
 Jquery API there. And then the script at the bottom, again, always
 reminding you the CSS and the script should be linked out. But here we
@@ -9574,22 +9747,25 @@ color on, so I want this red fill. And then you&apos;ll see very quickly, if
 I go to Inspector. Div on my main box, it&apos;s green fill. Click Host. I
 need to shrink this down to make this work. So, now watch main box as I
 go to click me, I get green fill and red fill. So, click one red fill
-background red, height 500, important. And what do I have important? I
-have this main box class important overrides everything else. Yeah. So,
+background red, height 500, important. And what do I have important? 
+
+I have this main box class important overrides everything else. Yeah. So,
 increases size. And you&apos;ll see here green fill still takes on. So, I
 could have removed green fill, but by putting important on the red fill,
 so, if I go there, I have the important. It overrides the green fill.
 So, click overrides. That changes it. Now it&apos;s probably easier to add,
-actually. Remove green fill, add toggle class red fill. So then, here I
-have click two main box, slide up. So, I&apos;m actually writing here 1000
+actually. Remove green fill, add toggle class red fill. 
+
+So then, here I have click two main box, slide up. So, I&apos;m actually writing here 1000
 function alert, slide done. Slide done, pop up, and slide down,
 reversing. So, slide down, click function main box slide down. And this
 is already predetermined function. Slide up is already predetermined
 Jquery, and I just go 1000. I don&apos;t have to say pixels or anything,
 it&apos;ll slide it all the way up to be finished. And you can google Jquery
 and you can learn about all these. But these are just demos showing you
-some of the pre built things that are already in Jquery. So, this like
-slide up, slide down is already built into Jquery. Toggle class is a
+some of the pre built things that are already in Jquery. 
+
+So, this like slide up, slide down is already built into Jquery. Toggle class is a
 nice fun one to play within Jquery. But ultimately, yeah, that&apos;s
 Jquery. It add a glimpse. And ultimately for your Project Three, all
 you&apos;re going to be doing is googling. So, box sliders and find one you
@@ -9620,7 +9796,6 @@ Below is a list of the content referenced in the Lesson 2 Video.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 8.5  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-5">8.5 Responsive Videos (7:29)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 In this lesson, we&apos;re going to learn how to make videos that are
 responsive to user screen size. So what are we talking about with
 responsive videos? Well, here I&apos;ll pop open this iframe. You start off
@@ -9629,8 +9804,9 @@ struggled when you move this and change sizes that the video itself
 doesn&apos;t hold true. But even worse, when you get different size screens,
 you want your video to be able to do this to shrink and grow with the
 screen size. So that&apos;s what we mean by responsive. You&apos;ll often notice
-that ratio of the video will get often weird, sometimes really long. So
-how do we get to this responsive video design? And we&apos;re going to do
+that ratio of the video will get often weird, sometimes really long. 
+
+So how do we get to this responsive video design? And we&apos;re going to do
 two different ones. As you see here, we&apos;re going to do responsive
 video, which is actually just hosting the video on your own browser and
 using HTML5 video controls versus pulling an iframe. So this iframe is a
@@ -9638,6 +9814,7 @@ little bit trickier. Let&apos;s pop open the code. So you&apos;ll see my style
 here right away is built-in. It&apos;s not linked out just for demo
 purposes, as usual. You&apos;ll notice the one thing here with the iframe, I
 keep the width and height that&apos;s Google determined to keep that ratio.
+
 And then I put a div around it. And that div is what I&apos;m actually going
 to be using to dictate the width and height in a percent style. So here
 up in the div position relative. And that allows for the position
@@ -9649,6 +9826,7 @@ Padding top 25%, height 0. So how do I achieve all these? This is all
 from looking at different coding sites and trying to figure out exactly
 what has already been predetermined to maintain that aspect ratio. Then
 on the iframe position absolute, which means I&apos;m filling out top left.
+
 So starting from the corner and then here I put the percentage of how
 big I want the video to be. So here with the height set at 0, this
 height will expand to fill out this video. So generally I want height
@@ -9657,19 +9835,25 @@ generally you want to keep the two the same. Go back here, refresh, and
 you&apos;ll see it&apos;s now a smaller video. So that&apos;s where then you
 manipulate the width and height of the actual frame. It&apos;ll all stay in
 percentage and it&apos;s filling out this 56.25% padding at the bottom and
-this ratio here. So you can do the math there if you want, I&apos;m not
+this ratio here. 
+
+So you can do the math there if you want, I&apos;m not
 going to. But generally we&apos;re messing around here. The trick with that
 is though, if I want to move it somewhere on my page. So here I have
 position relative. Let&apos;s say I add here top because it&apos;s already
 positioned. So 300px because I wanted to move it to the bottom of my
-page. Refresh, nothing happens. If I add top here 300px. Get rid of that
+page. Refresh, nothing happens. 
+
+If I add top here 300px. Get rid of that
 one troll s. That is where you want to be moving it. Let&apos;s do also
 100px. So it&apos;s a bit counterintuitive. But if then you look at the
 inspector. So here&apos;s my div, here&apos;s my iframe. So now you&apos;ll know
 this is a div, is actually the whole page. So I&apos;m moving around that
 div. So now I have to actually take this div if I want it to be there.
 And if I do width 50% because I don&apos;t want my video that the div is
-sitting in to be a full page. And I go to refresh you&apos;ll now see that I
+sitting in to be a full page. 
+
+And I go to refresh you&apos;ll now see that I
 messed it up a little. So what ultimately I need to do to move this
 whole thing around is I need this div to be what it is. And then I need
 to add another div around it and add my positioning in this div. So it
@@ -9679,7 +9863,9 @@ adding another div, moving that div around the page and shrinking it in
 size. And that becomes a bit complicated, but it&apos;s doable and it gives
 you a nice responsive design. Now, the easier version is to do
 responsive video. So here I have two of this video side-by-side. You&apos;ll
-see they&apos;re shrinking it nice and responsive. Pop this code open.
+see they&apos;re shrinking it nice and responsive. 
+
+Pop this code open.
 You&apos;ll see here, this code is a lot more straightforward. So I have
 just two divs side-by-side. Bird video controls true, loop. This is all
 coming straight out of HTML5 video. So I need a source for birdvid I
@@ -9690,8 +9876,9 @@ controlling it in the div instead of the other one where I&apos;m
 controlling it on the video. I&apos;m controlling its percentage and I just
 need to do the width. The height will fill itself out and I&apos;m adding a
 little float so the float doesn&apos;t have to be there. Float left, right.
-Let&apos;s change it to left just for the fun of it. Then on video I want
-the video to fill up 100% of this div. So I put width 100% and height is
+Let&apos;s change it to left just for the fun of it. 
+
+Then on video I want the video to fill up 100% of this div. So I put width 100% and height is
 auto. So that height auto is going to force whatever the size of the
 video is to automatically expand this 45% width up to the natural height
 it needs to be and it doesn&apos;t lose the aspect ratio then. And so the
@@ -9699,7 +9886,9 @@ video, I don&apos;t actually have my video embedded here anymore. So the
 video then will fill out that width and height to be naturally. And here
 I could put on my video padding. Let&apos;s do 2%, let&apos;s see if that works.
 Space between them. It&apos;s not going to put space between them. Put on
-there. There&apos;s our little space between our videos. So it&apos;s always
+there. 
+
+There&apos;s our little space between our videos. So it&apos;s always
 just a little experimentation but you can see this code is a lot easier
 and lighter to work with. So that&apos;s why embedding videos directly in
 your browser is always the right way to go. Makes things a lot easier.
@@ -9729,8 +9918,9 @@ this encoding. But frameworks are the shortcut. We have, in our process,
 teaching you that HTML is the core foundation for all Internet
 structure, teaching you that way allows you to conceptualize your code
 from the HTML up. CSS builds on HTML, JavaScript builds on both and
-that&apos;s the layering and the visualization we want. That&apos;s why as you
-see some of the demos in this class where we&apos;re doing JavaScript, were
+that&apos;s the layering and the visualization we want. 
+
+That&apos;s why as you see some of the demos in this class where we&apos;re doing JavaScript, were
 showing you these JavaScript models where you&apos;re building functional
 CSS that only gets implemented when you&apos;ve changed state, so state
 based CSS and the state then is measured by the JavaScript. Versus some
@@ -9739,14 +9929,17 @@ already written for them, they don&apos;t ever bother with it and they only
 ever change the content. They pick some style categories off their
 framework, and then they struggle with the Javascript and they don&apos;t
 even know how to change the CSS so, oftentimes, they&apos;re writing
-JavaScript that will change the CSS inside the Javascript. They&apos;re
+JavaScript that will change the CSS inside the Javascript. 
+
+They&apos;re
 writing inner HTML type stuff in JavaScript when really they could have
 it all state based and it makes it a lot lighter and easier and it keeps
 everything separate and conceptualized in your head, when you just write
 JavaScript that changes from one CSS state to the other, things like
 that. That&apos;s why we teach this way so you get that better
-conceptualization of how the things relate to each other or should. Why
-does HTML matter so much? It is the foundation as we started to say,
+conceptualization of how the things relate to each other or should. 
+
+Why does HTML matter so much? It is the foundation as we started to say,
 it&apos;s the baseline point of access, the least possible experience for a
 user. This is really important as I&apos;ve talked about many, when you&apos;re
 trying to get that 5% that JavaScript is turned off, or you&apos;re getting
@@ -9754,11 +9947,13 @@ very scale down versions of the HTML you can see this Wikipedia is a
 great example. Wikipedia has several scaled down versions that you can
 go to. That&apos;s the true site, but it&apos;s easier to load, it&apos;s easier for
 slower software and Internet speeds to process and transfer data.
+
 You&apos;ll also see that there&apos;s Google and some others have tried to do
 this for the Internet in general, scaling back because so many people
 are lost by not having high speed Internet connections. It is the least
 possible experience and if you focus on it you can make sure it is a
 good experience without the fancy JavaScript. Foundation of your DOM.
+
 Once you start programming your JavaScript you then will learn that the
 DOM and the API libraries for CSS and JavaScript focus off really good
 HTML. The HTML needs to be written really well for those libraries to
@@ -9767,13 +9962,16 @@ JavaScript gets written based on our HTML everything flows from the
 HTML. If I write some HTML, I can manipulate that HTML of my CSS,
 however, I want I can move it off the page, and I can manipulate the CSS
 and the HTML with my JavaScript. I can have a line of code, line of code
-I can manipulate all the way through that channel. But if I put a BR tag
-in a space, I can&apos;t necessarily manipulate that so easily with CSS,
+I can manipulate all the way through that channel. 
+
+But if I put a BR tag in a space, I can&apos;t necessarily manipulate that so easily with CSS,
 JavaScript. It creates a fixed stylistic tag that, often, can be really
 annoying to mix floats around. Sometimes, floats will go around it even
 though you don&apos;t want them to. It creates a fixed point in the HTML
 that can&apos;t be manipulated by your CSS and Javascript, so this is why we
-don&apos;t use those BR tags. Not all frameworks are created equal. The
+don&apos;t use those BR tags. 
+
+Not all frameworks are created equal. The
 easiest frameworks, you basically have some HTML that you can write a
 little bit but it&apos;s already structured for you, and then you pick a CSS
 theme. Those are the easiest frameworks where you&apos;re really not even
@@ -9781,7 +9979,9 @@ building a website. People can get websites up just putting their
 content in a few boxes, and then everything else gets flushed out for
 them. With more flexibility, you&apos;re writing your own HTML. You may have
 a framework that&apos;s given to you, and we&apos;ll show you what that looks
-like, but then you&apos;re able to manipulate it. You have some pre-written
+like, but then you&apos;re able to manipulate it. 
+
+You have some pre-written
 CSS, but often you&apos;re using classes that are pre-determined to
 implement that CSS, and then you add your own JavaScript as you see fit.
 On the easier side is Wordpress. Wordpress can move depending on if you
@@ -9791,14 +9991,18 @@ put in content and then everything else is figured out for them.
 Bootstrap is nice, right in the middle, lots of people use this. The
 problem as I&apos;ve mentioned before, Bootstrap security and other things
 aren&apos;t being updated as regular. Because it is owned by Twitter and
-Twitter is a company is struggling. Foundation is what a lot of people
+Twitter is a company is struggling. 
+
+Foundation is what a lot of people
 are moving to, there&apos;s also a ton of others between Bootstrap and
 Foundation. The Foundation library is nowhere near as big as Bootstrap
 but it&apos;s growing. Foundation is run by Zorb, which is a web development
 company. But it&apos;s open source so security and everything else is
 developed by the community. Then of course, Raw Code as you&apos;ve been
 learning is the most flexible but obviously you have to write everything
-yourself. Now I&apos;d also argue a little bit that now that you&apos;ve learned
+yourself. 
+
+Now I&apos;d also argue a little bit that now that you&apos;ve learned
 the Raw Code, Foundation is going to create more flexibility. Because
 you can jump past the things that you have to write over and over again
 and it&apos;ll allow you to spend more time on being flexible and creating
@@ -9817,8 +10021,9 @@ looking at more like a mathematical grid it&apos;s very simple. You,
 basically, have every single grid is broken in 12, so when I decide I
 want a full page grid I can then say in that full page grid, this box is
 going to be 12 units and I can break that up equal into six cells or I
-can break it into three sets of four cells, I can divide that now. If I
-wanted to break this six cell up there, it would be then 12 cells and I
+can break it into three sets of four cells, I can divide that now. 
+
+If I wanted to break this six cell up there, it would be then 12 cells and I
 could break that up, any which way and these will also as I scale if I
 want to put stuff in here this then becomes 12. There&apos;s some examples
 of input labels that are already pre-designed, some drop down menus
@@ -9834,7 +10039,9 @@ through here, div class, large-4, medium-4, medium-push-2 cell. These
 classes are already pre-written CSS code. You just have to, eventually,
 learn them. You play around with them you&apos;ll learn, it&apos;s very quickly,
 large, medium sized box, breaking it down and they will reference this
-library: Assets, CSS, foundation CSS. You can see here a map CSS, float
+library: Assets, CSS, foundation CSS. 
+
+You can see here a map CSS, float
 CSS, prototypes, all of these then reference back and are the built
 library. As you scroll through here, if we go large-4, find next you&apos;ll
 see here that several different web kits and other things are built for
@@ -9857,24 +10064,28 @@ mobile friendly and you don&apos;t have to think about that. That&apos;s where
 you get really nice flexibility. Now you still are going to spend some
 time thinking about how you want the layout to be and what it should
 look like. But you have control over X and Y coordinates so you can
-change those as well. In a particular box you have full control over
+change those as well. 
+
+In a particular box you have full control over
 margins and padding. So you can add then box 12 large
 padding 25 and then there&apos;s basic and advanced grid cell block classes
 which is what we have laid out here. So here you see 12, I have this
 just a 6. This 6 can then be broken up into 6 and 6. This 12 can be
 broken up into 3 4s and I could break these 4s up into like a 4 8 3 9 3
 3 6 if I wanted. And I could also break this up, do a 3, 3 6 and still
-gets 12. So it all gets broken down that way by using these classes. So
-here&apos;s some of the nomin culture which is the naming of these classes
-as they are. So a quick row is going to be a class grid x that&apos;ll
-define a row. A quick column would be just a cell and I then have some
-other definition around that. Smartphone is going to be a class small
+gets 12. So it all gets broken down that way by using these classes. 
+
+So here&apos;s some of the nomin culture which is the naming of these classes 
+as they are. So a quick row is going to be a class grid x that&apos;ll 
+define a row. A quick column would be just a cell and I then have some 
+other definition around that. Smartphone is going to be a class small 
 tablet is going to be a class medium and widescreen is going to be a
 class large. So these are my media queries and then I decide how big I
 want that based on the 12 grid spread. So once I have this layout, I
 want to pull up some of this code you&apos;ll see here. There&apos;s for
-instance, class primary call out. It&apos;s a nice call out color. You&apos;ll
-see here, grid padding X. So I&apos;m doing the padding on the X axis large
+instance, class primary call out. It&apos;s a nice call out color. 
+
+You&apos;ll see here, grid padding X. So I&apos;m doing the padding on the X axis large
 12 cell. So this is building a column instead of a row. You have radio
 dials already pre built so type radio but it&apos;s going to have already
 some predetermined checkboxes and radios along with it. So if I go to
@@ -9883,13 +10094,17 @@ going into radio and checkboxes. So they&apos;re making them already a
 little bit easier to use. Let&apos;s go back to our foundation. So once you
 get there you get the download then you can go to in the library is
 going to have the CSS and also a SAS version. But I want the HTML
-templates. So coming here with templates and building blocks, these 2
+templates. 
+
+So coming here with templates and building blocks, these 2
 are going to be where you can get some go to really quick to build
 without content in there as a starting place. And you&apos;ll see roughly
 the layout here. So see demo these pictures here might be like a house
 and some pictures of the house. Because I&apos;m a realtor, I have my agent
 name, little description and then here are several other houses you
-might be interested in. And you click on 1 of those and it comes to a
+might be interested in. 
+
+And you click on 1 of those and it comes to a
 page like this. So I could have buy that house right now or it could be
 product with a few different versions 3 navigation tabs up there that
 are all if you look here. And go to inspect you&apos;ll notice it&apos;s already
@@ -9897,7 +10112,9 @@ are all if you look here. And go to inspect you&apos;ll notice it&apos;s already
 option 1, 2, 3 is still across. Or I could have this be my sandwich
 where then I change this up here subtly and you&apos;ll find in when we go
 back to mess around, I&apos;ll show you that you can choose these features
-individually. And you&apos;ll see that everything is stacked. Now the buy is
+individually. 
+
+And you&apos;ll see that everything is stacked. Now the buy is
 again 95% width. You have the options there and everything now is
 already mobile version friendly. So you have a few different nice clean
 layouts, the most common layouts and again I&apos;ll emphasize Zorb created
@@ -9908,7 +10125,9 @@ really cool stories of technology is several companies have found that
 actually releasing their proprietary code makes it way better. The most
 famous being Netflix. They had a big competition several years. If you
 could improve their recommendation by I think it was 5%, what that meant
-was you take the recommendation algorithm. And if you get 5% more clicks
+was you take the recommendation algorithm. 
+
+And if you get 5% more clicks
 on recommendations than they had some big, I forget, multimillion dollar
 award, someone eventually won that. But the craziest part about that
 story is I kid you not, as I remember it, when they released their this
@@ -9921,7 +10140,9 @@ and having that challenge, they made there within an hour improved upon
 their code. And that&apos;s an important lesson. Lots of companies protect
 their proprietary code but other companies have found but sometimes
 it&apos;s their delivery and their brand name they protect and the code
-itself can be approved by sharing it with the public. So this is what
+itself can be approved by sharing it with the public. 
+
+So this is what
 Zorb did and they came up with these are the coresort of layouts that
 most people use. So product page, portfolio, agency, blog with sidebar
 blog, single column, e commerce, homepage real estate or travel news or
@@ -9930,8 +10151,9 @@ redevelop the wheel? These work been tested in the free market. Just
 start here, the next thing then that&apos;s really cool is the building
 blocks. So here you have kits navigation status. And what you&apos;ll find,
 for instance, here is a translucent form overlay. So on your form page
-you can download here. And you&apos;ll see here&apos;s your background. Here&apos;s
-a nice form. Look it, just compare this to what you all wrote. Some of
+you can download here. And you&apos;ll see here&apos;s your background. 
+
+Here&apos;s a nice form. Look it, just compare this to what you all wrote. Some of
 you came pretty damn close. Some of you are like, wow, I have so far to
 go. But don&apos;t worry, in pProject 1 you got an idea of how this works.
 And even if it wasn&apos;t this pretty, you now know what is going on. When
@@ -9945,7 +10167,9 @@ something so clean. Even though it seems simple, some of you, it comes
 naturally some of us work a lot harder to make something like this. But
 most of us now in this class can take something like this and add our
 little touches to it. You&apos;ll then see here&apos;s the HTML code. So you
-would take this HTML code. You have the div and the form. You cut and
+would take this HTML code. 
+
+You have the div and the form. You cut and
 paste this, drop this on top of an HTML page that has this nice
 background. And then here&apos;s the CSS with the actual page. So you&apos;ll
 see here, this code doesn&apos;t have the head at the top. So you&apos;re having
@@ -9953,7 +10177,9 @@ the head that you already downloaded from the original download. Then
 you&apos;re implementing this. You add this to your CSS page very simple CSS
 cleanly written or this is SAS. So it&apos;s really simple. Here&apos;s the CSS
 that gets rendered. You&apos;ll see it&apos;s a little bit longer. And again,
-we&apos;ll talk about the SCSS in a couple of lectures. And we&apos;ll go back,
+we&apos;ll talk about the SCSS in a couple of lectures. 
+
+And we&apos;ll go back,
 look at a few more of these. So here some drop downs. You&apos;ll see
 there&apos;s 16 pages, more and more. Here&apos;s all your code for Twitter,
 Facebook, anything you want to use. Here&apos;s some nice responsive tables.
