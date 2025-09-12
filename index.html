@@ -2306,21 +2306,23 @@ You can, anywhere from any port if it&apos;s connected to the web, you can wri
 and find it, but you can&apos;t really search for it. 
 It&apos;s not getting indexed anywhere.</p>
 
-This, for instance, is not even on the web, it&apos;s on my home network. 
+<p>This, for instance, is not even on the web, it&apos;s on my home network. 
 It&apos;s going to be local host. 
 This is the domain name and semi or colon 1, 2, 3, 4. 
 This might be maybe a router or some type of smart device attached to my home network. 
 I&apos;m looking at the local host there. 
 Then I&apos;m looking for, once I get to that local host, a file inside its operating system called 
 HR services Version 1 users and then here I have some parameters about that file I&apos;m trying 
-to extract or search for. 
-That&apos;s all the no WW really means, it&apos;s somewhere on the network or on the Web and 
+to extract or search for.</p>
+
+<p>That&apos;s all the no WW really means, it&apos;s somewhere on the network or on the Web and 
 it&apos;s not indexed. 
 Finally, we&apos;re going to talk about this with HTTP requests in the next lecture. 
 But one last version of a search is what would be a get request and then maybe a search dataset 
 put into it. 
-You have your www.google.co.uk. 
-Then here I have search, so I&apos;m using the search resource. 
+You have your www.google.co.uk.</p>
+
+<p>Then here I have search, so I&apos;m using the search resource.
 But then I&apos;m putting this question mark in there. 
 After that question mark is actually going to be compiled data. 
 I might have put into Google, who is Jack Bauer and that&apos;s going to be a query. 
@@ -2336,33 +2338,35 @@ Very rarely do you use this, it&apos;s more if you&apos;re talking to a server.
 You&apos;re managing, you&apos;re looking for file structure. 
 You might just do a quick search using the tilde. 
 That&apos;s in development, you might use this, but not so much when you&apos;re surfing the web. 
-That is Module 1, Lesson 3, the browser as a tool.
+That is Module 1, Lesson 3, the browser as a tool.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 1.11 http requests ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-11">1.11 HTTP Requests (8:45)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to lesson 4 of module 1, HTTP Requests.
-Specifically, we&apos;re talking about how the client, your PC, your phone request files from 
+<p>Welcome to lesson 4 of module 1, HTTP Requests.</p>
+<p>Specifically, we&apos;re talking about how the client, your PC, your phone request files from 
 a server, which is HTML, CSS, and JavaScript files. 
 The client parses the URI or the web address and sends that request for files to the server. 
 This is an example of what that looks like, so at the top, you can see here we have our GET 
-method requesting index HTML.
-It&apos;s going over HTTP 1 obviously is an older image, it&apos;s going to mark the date 
-connection, some information about the host, who it&apos;s contacting, and where it&apos;s 
-from, whether it was accepted. 
+method requesting index HTML.</p>
 
-If there was any form data or other such data that would be sent along with the request, it 
+<p>It&apos;s going over HTTP 1 obviously is an older image, it&apos;s going to mark the date 
+connection, some information about the host, who it&apos;s contacting, and where it&apos;s 
+from, whether it was accepted.</p>
+
+<p>If there was any form data or other such data that would be sent along with the request, it 
 would be packaged here in the message of the body. 
 All of this, of course, is just a printout example. 
-The actual HTTP request would be sent in computer code over the Internet. 
-We have seven types of HTTP requests we can make. 
+The actual HTTP request would be sent in computer code over the Internet.</p>
+
+<p>We have seven types of HTTP requests we can make. 
 Only four of them are ever used really to communicate in web browsing. 
 The other three, a head trace and connect are generally used for server testing, Internet 
 testing, network testing, things like that. 
 The most common is GET. 
 You&apos;re going to make a GET request, basically get me this document, any variable or 
-form data is sent as part of the URL. 
+form data is sent as part of the URL.</p>
 
-If you see down here an example, that would be HP. 
+<p>If you see down here an example, that would be HP. 
 You&apos;re going to have your web domain web address as we went over, you&apos;re going to 
 get a question mark q=232 and name equals Joe. 
 This is going to be some data being sent and it&apos;s appended to the actual web domain after 
@@ -2372,28 +2376,27 @@ It&apos;s unsecure and it really shouldn&apos;t be used to collect anything oth
 really basic data when you&apos;re sending it back and forth. 
 You&apos;ll see this a lot if it&apos;s just a search request. 
 If you&apos;re doing a Google search, you&apos;ll see this appended there. 
-Post is the second most common. 
+Post is the second most common.</p>
 
-It&apos;s used often to send form data and instead of appending any form or variable data to 
+<p>It&apos;s used often to send form data and instead of appending any form or variable data to 
 the end of the URL, it&apos;s actually going to encrypt it and package it in a secure file 
-that&apos;s sent along with the request. 
+that&apos;s sent along with the request.</p>
 
-Usually, if you think about it semantically, I&apos;m posting something to the server. 
+<p>Usually, if you think about it semantically, I&apos;m posting something to the server. 
 But Post can also be a request back and forth. 
 Really, the semantics of Post and GET are a bit antiquated, and you can use both Post and GET 
-to send data or receive data. 
+to send data or receive data.</p>
 
-Put and Delete are less commonly used, but they&apos;ve grown in the last couple of years 
+<p>Put and Delete are less commonly used, but they&apos;ve grown in the last couple of years 
 because Ruby on Rails code has decided to write their the teams that built Ruby on Rails 
-built their structure around the Put and Delete codes. 
+built their structure around the Put and Delete codes.</p>
 
-Put and Delete are getting a lot more use now in sending files and requesting files back and 
+<p>Put and Delete are getting a lot more use now in sending files and requesting files back and 
 forth with websites. 
-
 Then head trace connects head for instance or if I want just some information about the server, 
-I might request just what&apos;s in the HTTP head. 
+I might request just what&apos;s in the HTTP head.</p>
 
-I might want to just test connection. Are we connected? 
+<p>I might want to just test connection. Are we connected? 
 Am I getting a server here? 
 Because I&apos;m not getting any files from it. 
 Once I&apos;ve sent to my HP requests, I talked to a server, I&apos;m going to get an HTTP 
@@ -2402,7 +2405,7 @@ First line is the status of the request. 
 This is five groupings of three digit numbers. 
 You will get one of these three digit numbers back common example 404 not found. 
 Then you&apos;re going to get another header. 
-As you saw before, data fields, we&apos;ll go over some of those data fields next slide. 
+As you saw before, data fields, we&apos;ll go over some of those data fields next slide.</p>
 
 <p>Then lastly, the response to the body file. 
 If it&apos;s HTML and CSS files, those will be encrypted and sent along. 
@@ -2411,21 +2414,23 @@ But essentially, then whatever you requested is sent in the HTTP response. 
 If you were printed out, this is what it would look like in plain English. 
 At the top here, this is important, HTTP 1.1 we&apos;re getting a 200 OK.</p>
 
-That means you contact the right server. 
+<p>That means you contact the right server. 
 The files you expect were there, and here they are coming back to you. 
 We&apos;re going to get some dates. 
 What type of server it was. 
 Accepted ranges are going to be in bytes, common type text, HTML, it&apos;s what type of files are 
 being sent, content length. 
 When that file was last modified. 
-This is important for cookies. 
-We will often, if a file hasn&apos;t been registered as modified on your computer, it won&apos;t 
+This is important for cookies.</p>
+
+<p>We will often, if a file hasn&apos;t been registered as modified on your computer, it won&apos;t 
 update the actual file sitting in cookies. 
 Sometimes when we&apos;re coding this HTTP request, we might refresh our page. 
 But cookie says nothing changed so nothing changed in our presentation of our web pages. 
 Sometimes we&apos;ve got to clear out cookies, get a new file, especially when we&apos;re just 
-messing with spaces or tabs. 
-That can be really tricky. 
+messing with spaces or tabs.</p>
+
+<p>That can be really tricky. 
 That&apos;s definitely one common frustration new users can find when trying to figure out why 
 their website doesn&apos;t look like it&apos;s updated. 
 It&apos;s maybe because this request registered that there was an update, even though there 
@@ -2487,11 +2492,11 @@ happens when server is overloaded, getting too much, you haven&apos;t expande
 bandwidth or someone is attacking, just requesting too many files. 
 That is your HTTP and HTTPS file requests.</p>
 
-Transcript language: English
+<p>Transcript language: English</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 1.12 meet our three languages ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-12">1.12 Meet Our Three Languages (10:31)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In lesson five, we&apos;re going to to take an in depth look at our three
+<p>In lesson five, we&apos;re going to to take an in depth look at our three
 languages.
 As you&apos;ve heard in the last couple of videos, we&apos;re working with
 HTML, CSS and JavaScript, HTML, being the structure and content. 
@@ -2499,22 +2504,24 @@ If you look on the right side here, you&apos;ll see what&apos;s called a
 cascade, and in the black font, is going to to be our content. 
 So essentially we&apos;re building a framework, that identifies the
 different parts of our web page, giving semantic meaning to certain
-sections like our header, or our body. 
-And then when we build our CSS and JavaScript that semantic structure, is 
+sections like our header, or our body.</p>
+
+<p>And then when we build our CSS and JavaScript that semantic structure, is 
 going to to be really important in helping define how we write these two languages. 
 So again, it&apos;s just structure and content, If you just have HTML as you
 will in our project one, it&apos;s going to to be all left justified on the
 web page It&apos;s going to to look real basic. 
 CSS is our presentation style, that&apos;s where we add our font our color
-our layouts our line spacing all those fun things. 
-And then JavaScript is an actual coding language and it allows for 
+our layouts our line spacing all those fun things.</p>
+
+<p>And then JavaScript is an actual coding language and it allows for 
 in depth behavior. 
 So, moving your emails, indexing, playing video games on websites, 
 that&apos;s all done with JavaScript. 
 HTML, was invented by Tim Berners Lee, our big hero of the web, 
-back in the early 90s. 
+back in the early 90s.</p>
 
-It&apos;s the content structure and semantic layer as I mentioned. 
+<p>It&apos;s the content structure and semantic layer as I mentioned. 
 But more importantly it&apos;s not just how we write the other two codes
 into our HTML. 
 If we write our HTML correctly, it&apos;s how the web itself, the search
@@ -2524,8 +2531,9 @@ It&apos;s a process known as SEO so our meta tags, how we identify our h
 ones, these sort of very subtle differences between websites can 
 make your website seen when another website might not be. 
 We are now in HTML version 5, click there in the PDF if you want the
-specifications. 
-It&apos;s been live since about 2014, a key difference between previous 
+specifications.</p>
+
+<p>It&apos;s been live since about 2014, a key difference between previous 
 versions is that HTML 5 really finally separated out HTML from CSS, 
 removed all style, any kind of spacing or line spacing, color, font. 
 You can still do it because of HTML4 back conversions. 
@@ -2535,22 +2543,24 @@ Little version history, start off as HTML tags, just really informal 
 obviously before we had the web back in 91, 1st draft November 92. 
 It starts becoming a thing that we&apos;re documenting and declaring what it
 can do. 
-HTML 2 is published by the ITFIC convention, November 1995. 
-This is when the web is really blowing up we&apos;re trying to standardize
+HTML 2 is published by the ITFIC convention, November 1995.</p>
+
+<p>This is when the web is really blowing up we&apos;re trying to standardize
 the format. 
 Then again, we have the W3C becomes that standard place, where all these
 organizations come together. 
 Debate what HTML should look like, what uses they&apos;re doing with it,
 and how it needs to be updated to incorporate those new uses being rolled
-out by the cutting edge companies. 
-HTML 4 is when we settle on a widely used version of HTML. 
+out by the cutting edge companies.</p>
+
+<p>HTML 4 is when we settle on a widely used version of HTML. 
 Prior to that, in the 90s, &lbrack;LAUGH&rbrack; if you were learning HTML freshman
 year of college, it was already out of date by your senior year of
 college. 
 It was quite frustrating back then to learn web coding, but now we&apos;ve
-stabilized on HTML 5, so, HTML 4 went through two versions with 4 and 4.1. 
+stabilized on HTML 5, so, HTML 4 went through two versions with 4 and 4.1.</p>
 
-Then there was this slow, progressive development of HTML 5, and in the
+<p>Then there was this slow, progressive development of HTML 5, and in the
 meantime we had XHTML, which many of the key factors got adopted by HTML
 5, or were decided to be too strict. 
 XHTML 2 was discarded, as people were working on it, as HTML 5 became
@@ -2559,39 +2569,44 @@ With HTML 5 that you&apos;re learning now, you&apos;re pretty lucky. 
 It&apos;s likely to remain the standard until wearables and the 3D Web
 becomes the norm. 
 So right now, what you learn will likely still be valid for years to
-come. 
-It&apos;s a nice position to be in with learning web code right now. 
+come.</p>
+
+<p>It&apos;s a nice position to be in with learning web code right now. 
 CSS, as we&apos;ve mentioned before the cascading style sheets. 
 It&apos;s our descriptive content, presentation, style layouts,
 positioning, 
 anything that decorates your HTML tags and makes it more than just a
 stack of content left justified on your web page. 
 And again, I&apos;m going to to emphasize that separation of content from
-presentation. 
-You will hear throughout my lectures no style in your HTML, trying to
+presentation.</p>
+
+<p>You will hear throughout my lectures no style in your HTML, trying to
 take your image tags and put some width and height on your image. 
 I&apos;m going to to explain in future, lectures why that&apos;s not how we want
 to to go about changing the size of our images, color, font, positions,
 border line spacing, all that&apos;s done in CSS. 
 A very common error a lot of students do in early projects, is use BR or
 HR to put a space between their lines, because they want to to have a
-nice flow on their page. 
-Absolutely do not do that, I will have future lectures on why that
+nice flow on their page.</p>
+
+<p>Absolutely do not do that, I will have future lectures on why that
 really kind of limits, your layout, and the CSS applications you can
 apply. 
 So again, you will get points off, if you put &lt;br&gt; or 
-&lt;hr&gt; into your HTML, to make line spacing. 
+&lt;hr&gt; into your HTML, to make line spacing.
 Our CSS versions aren&apos;t as varied as our HTML, pretty much, CSS 1
 wasn&apos;t even a standard, It was competing with other forms of creating
-style and style sheets. 
-We also had HTML itself, with inline style which still exists and 
+style and style sheets.</p>
+
+<p>We also had HTML itself, with inline style which still exists and 
 is used for testing but should not end up in your web page. 
 CSS 2 gets published around May 1998, and we settle on that being
 generally the one that everyone&apos;s using by CSS 2.1. 
 It&apos;s published in 2011, no one&apos;s using any of the other style sheets,
 even though our code kind of indicates there&apos;s other style sheets to be
-used, in the head. 
-But we&apos;re linking to just CSS always with our style sheets. 
+used, in the head.</p>
+
+<p>But we&apos;re linking to just CSS always with our style sheets. 
 CSS 3, instead of being one giant rollout, has been more of a slow, 
 progressive rollout, and expansion of the CSS 2 model. 
 So essentially just building off a CSS 2 and adding, new content. 
@@ -2600,8 +2615,9 @@ The earliest starting around 1999, but really the brunt of it came out 
 around 2018, and there&apos;s been new modules rolled out every year. 
 And you can expect more modules to be rolled out, kind of overlapping
 with CSS 4 as that starts to roll out in the similar slow and
-progressive way. 
-Next we&apos;re going to to talk about JavaScript, also known as
+progressive way.</p>
+
+<p>Next we&apos;re going to to talk about JavaScript, also known as
 ECMAScript. 
 In the ECMAScript name, you will find JavaScript powering remote control
 cars, drones, remote controls, among other electronics in your everyday
@@ -2612,16 +2628,18 @@ Unlike HTML and CSS, JavaScript is a full computer language. 
 You could spend several classes just becoming an expert in JavaScript. 
 We&apos;re going to to learn in this class just how to plug and play, and 
 have JavaScript code that&apos;s kind of been pre written interact with your
-website, which is how most website developers learn JavaScript. 
-It is capable of the following moving objects around the screen, 
+website, which is how most website developers learn JavaScript.</p>
+
+<p>It is capable of the following moving objects around the screen, 
 manipulating HTML and CSS tags and rules, implementing cool browser
 APIs. 
 So much so, that it&apos;s the power of video games within your browser
 things like that. 
 That&apos;s all powered by JavaScript, originally developed by Brennan, 
 each at Netscape in 1995, in development it was called Mocha, then
-LiveScript. 
-Finally, when it was launched, they changed it to JavaScript, 
+LiveScript.</p>
+
+<p>Finally, when it was launched, they changed it to JavaScript, 
 &lbrack;LAUGH&rbrack; as a ploy, because at the time among the nerds in Silicon
 Valley. 
 Java was the cool new language and they just decided to piggyback on
@@ -2634,14 +2652,14 @@ By 1997, ECMA International published ECMA 2 6 2 version 1 which 
 basically married JavaScript and ECMA together as one and the same. 
 It really, switches name based on where it&apos;s being used. 
 So ,for instance in a remote control it&apos;s going to to be referred to
-ECMA, 
-In the web it&apos;s referred to JavaScript. 
+ECMA in the web it&apos;s referred to JavaScript. 
 We&apos;re currently in JavaScript version, is ECMA plus the current year, 
 so, 2015 is when this new naming standard started. 
 Used to have like ECMA 2.38, now it&apos;s ECMA 215, ECMA 216, ECMA 226,
 ECMA 229, and on and on, whatever the year is, will be the new launch of
-that standard. 
-Because every year there&apos;s subtle implementation subtle upgrades 
+that standard.</p>
+
+<p>Because every year there&apos;s subtle implementation subtle upgrades 
 to the script, and before we round out this lesson, I want to jump back
 and talk a little bit about the server side or back end code. 
 Servers are essentially just powerful computers with a lot of processors
@@ -2650,28 +2668,23 @@ Their role is to listen for Http requests, that&apos;s their primary goal is
 just listening for computers sending out over the network that request for
 files, and serving up those files to clients. 
 You can also write code on the server like PHP or Java or Python, so 
-that if someone enters credit cards or 
-sort of information that sort of information into the website. 
-You can collect that process it, turn it into files, access it. 
+that if someone enters credit cards or sort of information that sort of information into the website. 
+You can collect that process it, turn it into files, access it.
 So, to set up a server, you must have three things, 
 you need a static IP address with constant Internet connection because
-again, 
-that&apos;s its main role is just to be listening, to serve up files. 
-A domain name mapped to the IP, that&apos;s that address book we talked
-about. 
-So, going into the.com or the and then having that domain name in there 
+again, that&apos;s its main role is just to be listening, to serve up files.</p>
+
+<p>A domain name mapped to the IP, that&apos;s that address book we talked
+about. So, going into the.com or the and then having that domain name in there 
 mapped to an IP address which then maps to physical location in the
-network. 
-And then you&apos;re going to to want apache or IIS or other some sort of 
+network. And then you&apos;re going to to want apache or IIS or other some sort of 
 software that manages server security, applications user access. 
-And allows for those other codes to be implemented and 
-processed within the server. 
-And that is the introduction to our 3 codes, 3 technologies, if you
-will.
+And allows for those other codes to be implemented and processed within the server.
+And that is the introduction to our 3 codes, 3 technologies, if you will.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 1.13 the basics of html, pt 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-13">1.13 The Basics of HTML -- Part 1 (8:25)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In Lesson 6, we&apos;re finally going to get to the nuts and bolts of HTML
+<p>In Lesson 6, we&apos;re finally going to get to the nuts and bolts of HTML
 coding. 
 Pull up your no pad plus, and let&apos;s get started.
 HTML is parsed. 
@@ -2684,8 +2697,9 @@ ever written still works on modern browsers, so does the 500 and the
 five million. 
 They all still work. 
 The browsers are forgiving because it needs to make a lot of different
-types of old HTML still work. 
-This forgiveness may lead you to believe you can write sloppy
+types of old HTML still work.</p>
+
+<p>This forgiveness may lead you to believe you can write sloppy
 code because the website will work anyways. 
 But trust me, you do not want to write sloppy code because first, the
 crawlers, the search engines, they may get confused by sloppy code and
@@ -2695,8 +2709,9 @@ Less users equals less revenue, less foot traffic into your store. 
 Browsers will ignore white spaces, line breaks, and comments. 
 What that means is, for instance, here, if I wanted to write, this is a
 heading and I wanted a lot of space in there, if I just try and add
-space like that, the browser is going to ignore that. 
-Here, this is a comment, you&apos;ll see it&apos;s in green. 
+space like that, the browser is going to ignore that.</p>
+
+<p>Here, this is a comment, you&apos;ll see it&apos;s in green. 
 This code even files to write h3, you&apos;ll see it&apos;s in green even though
 it is technically HTML code. 
 Because I&apos;ve wrapped it in a comment, it&apos;s not going to get rendered. 
@@ -2710,8 +2725,9 @@ create our first page on a website to be index.html. 
 For labs and projects, I expect to see the first file be index.html. 
 After that, each web page can be page2, page3, whatever you want to
 name it because you&apos;re navigating from the. html, so let&apos;s create our
-first HTML file. 
-From our Notepad++, if we drop down and go to new, we&apos;ve created a new
+first HTML file.</p>
+
+<p>From our Notepad++, if we drop down and go to new, we&apos;ve created a new
 file. 
 You&apos;ll notice it&apos;s all black text. 
 I&apos;m going to jump back here to an index that&apos;s already created. 
@@ -2720,16 +2736,18 @@ color scheme of the different code elements. 
 If I just create a new file, it&apos;s not going to be a Notepad++ HTML
 file, it&apos;s going to be just text file. 
 Before I start writing any code, I want to go up to save as scroll down
-here to Hypertext markup language. 
-Now this file has been designated HTML file here in the type, and I want
+here to Hypertext markup language.</p>
+
+<p>Now this file has been designated HTML file here in the type, and I want
 to call it index.html. 
 This will create the expected file name that a browser 
 is looking for when it lands on a website and hit Save. 
 Now we&apos;ve got our space in which we can start creating HTML code. 
 Other things we want to know about our file name structure, first
 though, is that files cannot have spaces in the file name. 
-If you need a space, use an underscore, like here, page_2. 
-This is a very common page structuring or you could just have it
+If you need a space, use an underscore, like here, page_2.</p>
+
+<p>This is a very common page structuring or you could just have it
 page2 without the underscore or a space, but never use spaces. 
 Only use letters, numbers, underscores, hyphens, and periods. 
 Very short file names, one or two words are the best. 
@@ -2738,7 +2756,8 @@ names. 
 I want to emphasize here practice lower case letterings. 
 The reason for always writing a lower case, is because many server
 structures don&apos;t recognize that an upper case may possibly be a lower
-case letter in a file name. 
+case letter in a file name.</p>
+
 In this situation, and we&apos;ll get into what these codes mean in a minute
 here, but HF, my hypertext reference, I&apos;m looking for page2.html. 
 I&apos;m looking for a file name that, if a file actually is named with an
